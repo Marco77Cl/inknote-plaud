@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-23",
+  "version": "0.4.0",
+  "firmware": {
+    "path": "/Users/marco/Documents/ChatGPT/水墨屏plaud项目/releases/light-reading-v0.4/inknote_system.bin",
+    "bytes": 14401808,
+    "sha256": "a7ae5666c910b378bc284d574a360a09bd6ea42cf426801447844a12b20a489a",
+    "flashed_application_offset": "0x10000",
+    "flash_verified": true,
+    "boot_sd_mount_verified": true
+  },
+  "mac": {
+    "path": "/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-studio/build/InkNote Studio.app",
+    "executable_sha256": "71a8bd04a436d527d15ca04cba3f3dbcd0ee949b08b265f44340404897f99062",
+    "codesign_verified": true,
+    "native_epub_import_preview": "轻阅读使用示例, InkNote, 2 chapters"
+  },
+  "tests": {
+    "epub_import": 13,
+    "upload_handler": 25,
+    "pagination": "ASan/UBSan passed"
+  },
+  "pending": [
+    "real Wi-Fi pairing and upload",
+    "physical reading display, turns, fonts, chapters, bookmarks",
+    "device exit/reopen and power-cycle resume",
+    "long-book performance"
+  ]
+}

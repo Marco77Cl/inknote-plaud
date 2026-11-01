@@ -1,0 +1,35 @@
+I (2364) esp_image: segment 1: paddr=00c58710 vaddr=3fc9ab00 sizESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037b702
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (27) boot: compile time Dec 26 2025 09:27:20
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (33) boot.esp32s3: Boot SPI Speed : 80MHz
+I (37) boot.esp32s3: SPI Mode       : DIO
+I (41) boot.esp32s3: SPI Flash Size : 16MB
+I (45) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00f00000
+I (78) boot:  3 storage          Unknown data     01 82 00f10000 000f0000
+I (84) boot: End of partition table
+I (88) esp_image: segment 0: paddr=00010020 vaddr=3c110020 size=c486e8h (12879592) map
+I (2364) esp_image: segment 1: paddr=00c58710 vaddr=3fc9ab00 size=05c20h ( 23584) load
+I (2369) esp_image: segment 2: paddr=00c5e338 vaddr=40374000 size=01ce0h (  7392) load
+I (2371) esp_image: segment 3: paddr=00c60020 vaddr=42000020 size=1015a4h (1054116) map
+I (2562) esp_image: segment 4: paddr=00d615cc vaddr=40375ce0 size=14ddch ( 85468) load
+I (2581) esp_image: segment 5: paddr=00d763b0 vaddr=50000000 size=00020h (    32) load
+I (2590) boot: Loaded app from partition at offset 0x10000
+I (2590) boot: Disabling RNG early entropy source...

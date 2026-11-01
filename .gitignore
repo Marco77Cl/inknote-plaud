@@ -1,0 +1,9 @@
+/tools/
+/vendor/
+/backups/
+/build/
+**/build/
+**/managed_components/
+.DS_Store
+
+/recordings/

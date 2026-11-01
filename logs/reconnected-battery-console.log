@@ -1,0 +1,145 @@
+I (2293) esp_image: segment 1: paddr=00bf5af8 vaddr=3fc99c00 sizESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037c652
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (27) boot: compile time Dec 26 2025 09:27:20
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (33) boot.esp32s3: Boot SPI Speed : 80MHz
+I (37) boot.esp32s3: SPI Mode       : DIO
+I (41) boot.esp32s3: SPI Flash Size : 16MB
+I (45) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00f00000
+I (78) boot:  3 storage          Unknown data     01 82 00f10000 000f0000
+I (84) boot: End of partition table
+I (88) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=be5ad0h (12475088) map
+I (2293) esp_image: segment 1: paddr=00bf5af8 vaddr=3fc99c00 size=05ca8h ( 23720) load
+I (2298) esp_image: segment 2: paddr=00bfb7a8 vaddr=40374000 size=04870h ( 18544) load
+I (2303) esp_image: segment 3: paddr=00c00020 vaddr=42000020 size=f62f0h (1008368) map
+I (2482) esp_image: segment 4: paddr=00cf6318 vaddr=40378870 size=112d0h ( 70352) load
+I (2498) esp_image: segment 5: paddr=00d075f0 vaddr=600fe100 size=0001ch (    28) load
+I (2507) boot: Loaded app from partition at offset 0x10000
+I (2507) boot: Disabling RNG early entropy source...
+I (2518) octal_psram: vendor id    : 0x0d (AP)
+I (2518) octal_psram: dev id       : 0x02 (generation 3)
+I (2518) octal_psram: density      : 0x03 (64 Mbit)
+I (2520) octal_psram: good-die     : 0x01 (Pass)
+I (2525) octal_psram: Latency      : 0x01 (Fixed)
+I (2529) octal_psram: VCC          : 0x01 (3V)
+I (2533) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (2538) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (2543) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (2548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (2553) octal_psram: DriveStrength: 0x00 (1/1)
+I (2558) MSPI Timing: PSRAM timing tuning index: 4
+I (2562) esp_psram: Found 8MB PSRAM device
+I (2566) esp_psram: Speed: 80MHz
+I (2569) cpu_start: Multicore app
+I (2998) esp_psram: SPI SRAM memory test OK
+I (3007) cpu_start: Pro cpu start user code
+I (3007) cpu_start: cpu freq: 160000000 Hz
+I (3007) app_init: Application information:
+I (3007) app_init: Project name:     ESP32-S3_ePaper-3.97
+I (3012) app_init: App version:      1
+I (3016) app_init: Compile time:     Jan 22 2026 11:51:15
+I (3021) app_init: ELF file SHA256:  9e7ed24d2...
+I (3025) app_init: ESP-IDF:          v5.4.1
+I (3029) efuse_init: Min chip rev:     v0.0
+I (3033) efuse_init: Max chip rev:     v0.99 
+I (3037) efuse_init: Chip rev:         v0.2
+I (3041) heap_init: Initializing. RAM available for dynamic allocation:
+I (3047) heap_init: At 3FCAC998 len 0003CD78 (243 KiB): RAM
+I (3053) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (3058) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (3063) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM
+I (3069) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (3076) spi_flash: detected chip: generic
+I (3079) spi_flash: flash io: dio
+I (3083) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (3089) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (3096) main_task: Started on CPU0
+I (3106) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (3106) main_task: Calling app_main()
+E (3116) EVEN: Hello world!
+
+I (3116) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3126) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3126) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3136) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3146) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3156) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (3216) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3216) _sdcard: SD card mounted at /sdcard
+Name: SN128
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 121942MB
+CSD: ver=2, sector_size=512, capacity=249737216 read_bl_len=9
+SSR: bus_width=4
+I (3226) I2C_BSP: I2C master bus initialized on port 0
+I (3286) I2C_BSP: All I2C devices initialized
+SPIFFS mounted - Total size: 875 KB used: 87 KB
+I (3386) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3386) gpio: GPIO[45]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3406) PCF85063: The RTC initialization of PCF85063 has been completed
+I (3406) axp2101: Init PMU SUCCESS!
+I (3416) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3416) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3426) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3426) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3446) page_audio: i2s driver init success
+I (3446) ES8311: es i2c_cfg bus_handle=0x3ccf7de4 addr=0x30
+I (3456) ES8311: Work in Slave mode
+I (3456) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (3456) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:3
+I (3466) I2S_IF: STD Mode 1 bits:16/16 channel:2 sample_rate:16000 mask:3
+I (3486) Adev_Codec: Open codec device OK
+I (3486) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:1
+I (3486) I2S_IF: STD Mode 0 bits:16/16 channel:2 sample_rate:16000 mask:1
+I (3506) Adev_Codec: Open codec device OK
+I (3506) ES8311: ES8311 codec initialized successfully
+I (3506) page_audio: es8311 codec init success
+I (3556) page_audio: mute setting 0
+I (3556) page_audio: audio player init success
+I (3556) page_audio: Audio subsystem ready (muted, volume=0)
+I (3556) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3566) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3566) gpio: GPIO[46]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3576) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+E (3996) main: mode = 0
+E (3996) i2c.master: I2C transaction unexpected nack detected
+E (3996) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (3996) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4006) i2c.master: I2C transaction unexpected nack detected
+E (4006) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4016) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4026) i2c.master: I2C transaction unexpected nack detected
+E (4026) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4036) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4046) i2c.master: I2C transaction unexpected nack detected
+E (4046) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4056) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4066) i2c.master: I2C transaction unexpected nack detected
+E (4066) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4076) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+I (4096) network: Turn off WiFi
+E (4096) EVEN: Restarting now.
+
+I (4106) BAT_Power: BAT_Power = 100%
+I (12326) home: EPD_Sleep
+I (15346) home: EPD_Init
+I (16396) BAT_Power: BAT_Power = 100%
+I (17036) home: EPD_Sleep

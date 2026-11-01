@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "native_ui": [
+    "read legacy transcript",
+    "speaker clustering",
+    "restore auto label",
+    "generate summary",
+    "export Markdown"
+  ],
+  "real_short_recording_speakers": 1,
+  "nonmeeting_recording_summary_points": 0,
+  "export_contains_source": true,
+  "positive_summary_fixture": "logs/summary-fixture-acceptance.json",
+  "known_four_speaker_fixture": {
+    "specified_count": 4,
+    "automatic_count": 5
+  },
+  "limitations": [
+    "automatic speaker count experimental",
+    "No long-meeting accuracy evaluation",
+    "AI summaries need human verification"
+  ]
+}

@@ -1,0 +1,659 @@
+Executing action: all (aliases: build)
+Running ninja in directory /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build
+Executing "ninja all"...
+[1/22] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/esp-idf/main && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/spiffs/spiffsgen.py 0xf0000 /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[2/22] Performing build step for 'bootloader'
+[1/1] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/bootloader/esp-idf/esptool_py && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/bootloader/bootloader.bin
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[3/22] No install step for 'bootloader'
+[4/22] Completed 'bootloader'
+[5/22] Building CXX object esp-idf/axpPower/CMakeFiles/__idf_axpPower.dir/axp_prot.cpp.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/components/axpPower/axp_prot.cpp: In function 'void axp_init()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/components/axpPower/axp_prot.cpp:48:14: warning: variable 'vol' set but not used [-Wunused-but-set-variable]
+   48 |     uint16_t vol = axp2101.getSysPowerDownVoltage();
+      |              ^~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/components/axpPower/axp_prot.cpp:62:13: warning: variable 'opt' set but not used [-Wunused-but-set-variable]
+   62 |     uint8_t opt = axp2101.getPowerKeyPressOffTime();
+      |             ^~~
+[6/22] Linking C static library esp-idf/axpPower/libaxpPower.a
+[7/22] Building C object esp-idf/epaper_port/CMakeFiles/__idf_epaper_port.dir/epaper_port.c.obj
+[8/22] Linking C static library esp-idf/epaper_port/libepaper_port.a
+[9/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_settings/page_settings.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc: In function 'int Sleep_wake_settings()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc:318:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  318 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc:318:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc:318:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc:318:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc:318:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc:318:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_settings/page_settings.cc:42:21: warning: 'imu_task_handle' defined but not used [-Wunused-variable]
+   42 | static TaskHandle_t imu_task_handle = NULL;
+      |                     ^~~~~~~~~~~~~~~
+[10/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/file_browser/file_browser.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc: In function 'void file_browser_task()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:169:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  169 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:169:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:169:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:169:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:169:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:169:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:166:10: warning: unused variable 'first_display' [-Wunused-variable]
+  166 |     bool first_display = true;  // The first display logo
+      |          ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc: In function 'int Sleep_wake()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:756:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  756 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:756:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:756:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:756:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:756:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:756:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+In file included from /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/file_browser/file_browser.cc:10:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:112:13: warning: 'bool read_id3v1_tag(FILE*, char*, char*, size_t)' declared 'static' but never defined [-Wunused-function]
+  112 | static bool read_id3v1_tag(FILE *fp, char *title, char *artist, size_t max_len);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:113:13: warning: 'bool parse_mp3_frame_header(uint32_t, int*, int*, int*)' declared 'static' but never defined [-Wunused-function]
+  113 | static bool parse_mp3_frame_header(uint32_t header, int *bitrate, int *samplerate, int *channels);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:114:13: warning: 'long int find_mp3_frame(FILE*)' declared 'static' but never defined [-Wunused-function]
+  114 | static long find_mp3_frame(FILE *fp);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:115:17: warning: 'uint32_t parse_synchsafe_int(uint8_t*)' declared 'static' but never defined [-Wunused-function]
+  115 | static uint32_t parse_synchsafe_int(uint8_t *data);
+      |                 ^~~~~~~~~~~~~~~~~~~
+[11/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_alarm/page_alarm.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:27:30: warning: missing initializer for member 'Alarm::minute' [-Wmissing-field-initializers]
+   27 | Alarm alarms[MAX_ALARMS] = {0};
+      |                              ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:27:30: warning: missing initializer for member 'Alarm::enabled' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc: In function 'int Sleep_wake_alarm()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:175:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  175 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:175:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:175:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:175:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:175:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:175:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc: In function 'void edit_alarm_item(int)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:229:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  229 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:229:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:229:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:229:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:229:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:229:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:220:9: warning: unused variable 'editing' [-Wunused-variable]
+  220 |     int editing = 0;
+      |         ^~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:225:9: warning: unused variable 'js' [-Wunused-variable]
+  225 |     int js = 0;
+      |         ^~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc: In function 'void page_alarm_menu()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:380:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  380 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:380:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:380:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:380:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:380:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:380:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+In file included from /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_alarm/page_alarm.cc:21:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:112:13: warning: 'bool read_id3v1_tag(FILE*, char*, char*, size_t)' declared 'static' but never defined [-Wunused-function]
+  112 | static bool read_id3v1_tag(FILE *fp, char *title, char *artist, size_t max_len);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:113:13: warning: 'bool parse_mp3_frame_header(uint32_t, int*, int*, int*)' declared 'static' but never defined [-Wunused-function]
+  113 | static bool parse_mp3_frame_header(uint32_t header, int *bitrate, int *samplerate, int *channels);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:114:13: warning: 'long int find_mp3_frame(FILE*)' declared 'static' but never defined [-Wunused-function]
+  114 | static long find_mp3_frame(FILE *fp);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:115:17: warning: 'uint32_t parse_synchsafe_int(uint8_t*)' declared 'static' but never defined [-Wunused-function]
+  115 | static uint32_t parse_synchsafe_int(uint8_t *data);
+      |                 ^~~~~~~~~~~~~~~~~~~
+[12/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_weather/page_weather.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:41:9: warning: "MAX_NAME_LEN" redefined
+   41 | #define MAX_NAME_LEN 16
+      |         ^~~~~~~~~~~~
+In file included from /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:21:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/components/sdcard_bsp/sdcard_bsp.h:11:9: note: this is the location of the previous definition
+   11 | #define MAX_NAME_LEN  255     // The maximum length of a single file/directory name
+      |         ^~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc: In function 'void weather_fetch_and_show_cached(const char*, bool)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::host' [-Wmissing-field-initializers]
+  264 |     };
+      |     ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::port' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::username' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::auth_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::path' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::query' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::client_cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::client_key_pem' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::client_key_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::client_key_password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::client_key_password_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::tls_version' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::user_agent' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::method' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::timeout_ms' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::disable_auto_redirect' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::max_redirection_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::max_authorization_retries' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::transport_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::buffer_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::buffer_size_tx' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::is_async' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::use_global_ca_store' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::skip_cert_common_name_check' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::common_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::crt_bundle_attach' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_enable' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_idle' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_interval' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::if_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::alpn_protos' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:264:5: warning: missing initializer for member 'esp_http_client_config_t::addr_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:235:10: warning: unused variable 'need_refresh' [-Wunused-variable]
+  235 |     bool need_refresh = force_refresh;
+      |          ^~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:331:9: warning: unused variable 'forecast_size' [-Wunused-variable]
+  331 |     int forecast_size = forecast ? cJSON_GetArraySize(forecast) : 0;
+      |         ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc: In function 'int amap_ip_location_fetch_city_code_by_name(char*, size_t)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::host' [-Wmissing-field-initializers]
+  498 |     esp_http_client_config_t config = {0};
+      |                                         ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::port' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::username' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::auth_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::path' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::query' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::client_cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_pem' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_password_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::tls_version' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::user_agent' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::method' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::timeout_ms' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::disable_auto_redirect' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::max_redirection_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::max_authorization_retries' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::event_handler' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::transport_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::buffer_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::buffer_size_tx' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::user_data' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::is_async' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::use_global_ca_store' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::skip_cert_common_name_check' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::common_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::crt_bundle_attach' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_enable' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_idle' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_interval' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::if_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::alpn_protos' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:498:41: warning: missing initializer for member 'esp_http_client_config_t::addr_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc: In function 'int amap_ip_location_fetch_city_code(char*, size_t)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::host' [-Wmissing-field-initializers]
+  550 |     esp_http_client_config_t config = {0};
+      |                                         ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::port' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::username' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::auth_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::path' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::query' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::client_cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_pem' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_password_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::tls_version' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::user_agent' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::method' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::timeout_ms' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::disable_auto_redirect' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::max_redirection_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::max_authorization_retries' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::event_handler' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::transport_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::buffer_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::buffer_size_tx' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::user_data' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::is_async' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::use_global_ca_store' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::skip_cert_common_name_check' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::common_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::crt_bundle_attach' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_enable' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_idle' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_interval' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::if_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::alpn_protos' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:550:41: warning: missing initializer for member 'esp_http_client_config_t::addr_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc: In function 'void amap_ip_location_fetch()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::host' [-Wmissing-field-initializers]
+  883 |     esp_http_client_config_t config = {0};
+      |                                         ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::port' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::username' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::auth_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::path' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::query' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::<anonymous>' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::client_cert_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_pem' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_password' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::client_key_password_len' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::tls_version' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::user_agent' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::method' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::timeout_ms' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::disable_auto_redirect' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::max_redirection_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::max_authorization_retries' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::event_handler' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::transport_type' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::buffer_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::buffer_size_tx' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::user_data' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::is_async' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::use_global_ca_store' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::skip_cert_common_name_check' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::common_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::crt_bundle_attach' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_enable' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_idle' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_interval' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::keep_alive_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::if_name' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::alpn_protos' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:883:41: warning: missing initializer for member 'esp_http_client_config_t::addr_type' [-Wmissing-field-initializers]
+In file included from /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:26:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:112:13: warning: 'bool read_id3v1_tag(FILE*, char*, char*, size_t)' declared 'static' but never defined [-Wunused-function]
+  112 | static bool read_id3v1_tag(FILE *fp, char *title, char *artist, size_t max_len);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:113:13: warning: 'bool parse_mp3_frame_header(uint32_t, int*, int*, int*)' declared 'static' but never defined [-Wunused-function]
+  113 | static bool parse_mp3_frame_header(uint32_t header, int *bitrate, int *samplerate, int *channels);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:114:13: warning: 'long int find_mp3_frame(FILE*)' declared 'static' but never defined [-Wunused-function]
+  114 | static long find_mp3_frame(FILE *fp);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:115:17: warning: 'uint32_t parse_synchsafe_int(uint8_t*)' declared 'static' but never defined [-Wunused-function]
+  115 | static uint32_t parse_synchsafe_int(uint8_t *data);
+      |                 ^~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:164:12: warning: 'int get_city_code(const char*, const char*, const char*, char*)' defined but not used [-Wunused-function]
+  164 | static int get_city_code(const char* filename, const char* province, const char* city, char* out_code) {
+      |            ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:139:13: warning: 'void load_city_list(const char*, const char*)' defined but not used [-Wunused-function]
+  139 | static void load_city_list(const char* filename, const char* province) {
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:116:13: warning: 'void load_province_list(const char*)' defined but not used [-Wunused-function]
+  116 | static void load_province_list(const char* filename) {
+      |             ^~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather/page_weather.cc:78:13: warning: 'force_refresh' defined but not used [-Wunused-variable]
+   78 | static bool force_refresh = true;
+      |             ^~~~~~~~~~~~~
+[13/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_clock/page_clock.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:77:9: warning: "NVS_NAMESPACE" redefined
+   77 | #define NVS_NAMESPACE "clock_th"
+      |         ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:75:9: note: this is the location of the previous definition
+   75 | #define NVS_NAMESPACE "clock_config"
+      |         ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::months' [-Wmissing-field-initializers]
+   93 | Clock_TH Clock_TH_Old = {0};
+      |                           ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::BAT_Power' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::months' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:93:27: warning: missing initializer for member 'Clock_TH::BAT_Power' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: In function 'int get_time_from_ntp(tm*)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_min' [-Wmissing-field-initializers]
+  120 |     struct tm timeinfo = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_hour' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_mday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_mon' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_year' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_wday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_yday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:120:28: warning: missing initializer for member 'tm::tm_isdst' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: In function 'void show_time(const Time_data*)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_min' [-Wmissing-field-initializers]
+  163 |     struct tm tm_val = {0};
+      |                          ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_hour' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_mday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_mon' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_year' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_wday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_yday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:163:26: warning: missing initializer for member 'tm::tm_isdst' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: In function 'void page_clock_init()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:323:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  323 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:323:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:323:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:323:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:323:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:323:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_min' [-Wmissing-field-initializers]
+  324 |     struct tm ntp_tm = {0};
+      |                          ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_hour' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_mday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_mon' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_year' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_wday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_yday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:324:26: warning: missing initializer for member 'tm::tm_isdst' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: In function 'void page_clock_show()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:344:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  344 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:344:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:344:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:344:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:344:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:344:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_min' [-Wmissing-field-initializers]
+  363 |             struct tm ntp_tm = {0};
+      |                                  ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_hour' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_mday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_mon' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_year' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_wday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_yday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:363:34: warning: missing initializer for member 'tm::tm_isdst' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: In function 'void page_clock_show_mode()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_min' [-Wmissing-field-initializers]
+  467 |             struct tm ntp_tm = {0};
+      |                                  ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_hour' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_mday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_mon' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_year' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_wday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_yday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:467:34: warning: missing initializer for member 'tm::tm_isdst' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: In function 'void page_calendar_show()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:548:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  548 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:548:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:548:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:548:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:548:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:548:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_min' [-Wmissing-field-initializers]
+  577 |             struct tm ntp_tm = {0};
+      |                                  ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_hour' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_mday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_mon' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_year' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_wday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_yday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:577:34: warning: missing initializer for member 'tm::tm_isdst' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:556:9: warning: variable 'last_hour' set but not used [-Wunused-but-set-variable]
+  556 |     int last_hour = -1;
+      |         ^~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: In function 'void page_calendar_show_mode()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_min' [-Wmissing-field-initializers]
+  693 |             struct tm ntp_tm = {0};
+      |                                  ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_hour' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_mday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_mon' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_year' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_wday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_yday' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:693:34: warning: missing initializer for member 'tm::tm_isdst' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::festival' [-Wmissing-field-initializers]
+  803 | static LunarInfo g_lunar_info = {0};
+      |                                   ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::lunarFestival' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::IMonthCn' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::IDayCn' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::gzYear' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::gzMonth' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::gzDay' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::ncWeek' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::Term' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:803:35: warning: missing initializer for member 'LunarInfo::astro' [-Wmissing-field-initializers]
+In file included from /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:28:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:112:13: warning: 'bool read_id3v1_tag(FILE*, char*, char*, size_t)' declared 'static' but never defined [-Wunused-function]
+  112 | static bool read_id3v1_tag(FILE *fp, char *title, char *artist, size_t max_len);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:113:13: warning: 'bool parse_mp3_frame_header(uint32_t, int*, int*, int*)' declared 'static' but never defined [-Wunused-function]
+  113 | static bool parse_mp3_frame_header(uint32_t header, int *bitrate, int *samplerate, int *channels);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:114:13: warning: 'long int find_mp3_frame(FILE*)' declared 'static' but never defined [-Wunused-function]
+  114 | static long find_mp3_frame(FILE *fp);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:115:17: warning: 'uint32_t parse_synchsafe_int(uint8_t*)' declared 'static' but never defined [-Wunused-function]
+  115 | static uint32_t parse_synchsafe_int(uint8_t *data);
+      |                 ^~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:806:13: warning: 'void show_lunar_for_today(const Time_data*)' defined but not used [-Wunused-function]
+  806 | static void show_lunar_for_today(const Time_data* t)
+      |             ^~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_clock/page_clock.cc:250:20: warning: 'const char* get_current_timezone_name()' defined but not used [-Wunused-function]
+  250 | static const char* get_current_timezone_name(void)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+[14/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_fiction/page_fiction.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:59:44: warning: missing initializer for member 'fiction_context_t::encoding' [-Wmissing-field-initializers]
+   59 | static fiction_context_t g_fiction_ctx = {0};
+      |                                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:59:44: warning: missing initializer for member 'fiction_context_t::current_position' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:59:44: warning: missing initializer for member 'fiction_context_t::current_page' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:59:44: warning: missing initializer for member 'fiction_context_t::file_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:59:44: warning: missing initializer for member 'fiction_context_t::is_open' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:59:44: warning: missing initializer for member 'fiction_context_t::bookmarks' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:59:44: warning: missing initializer for member 'fiction_context_t::bookmark_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::encoding' [-Wmissing-field-initializers]
+   60 | static fiction_display_context_t g_display_ctx = {0};
+      |                                                    ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::file_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::is_open' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::current_position' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::current_page' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::current_font_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::page_buffers' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::current_buffer_index' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::lines_per_page' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::chars_per_line' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::current_font' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::bookmark_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:60:52: warning: missing initializer for member 'fiction_display_context_t::bookmarks' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'int Sleep_wake_fiction(bool, bool, bool)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:643:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  643 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:643:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:643:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:643:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:643:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:643:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void page_fiction_task()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:741:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  741 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:741:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:741:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:741:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:741:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:741:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void render_page_to_buffer(page_cache_t*, const char*, bool)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1402:17: warning: unused variable 'p' [-Wunused-variable]
+ 1402 |     const char* p = content;
+      |                 ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1403:17: warning: unused variable 'line_start' [-Wunused-variable]
+ 1403 |     const char* line_start = content;
+      |                 ^~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void render_current_page_ui(page_cache_t*)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1647:12: warning: unused variable 'font' [-Wunused-variable]
+ 1647 |     cFONT* font = get_font_by_encoding(g_display_ctx.current_font_size, g_display_ctx.encoding);
+      |            ^~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void display_font_menu(font_size_t)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1704:9: warning: unused variable 'item_height' [-Wunused-variable]
+ 1704 |     int item_height = 50;
+      |         ^~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'int page_fiction_file()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:2544:10: warning: unused variable 'first_display' [-Wunused-variable]
+ 2544 |     bool first_display = true;
+      |          ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:2303:13: warning: 'void truncate_filename_for_display(const char*, char*, int, int)' defined but not used [-Wunused-function]
+ 2303 | static void truncate_filename_for_display(const char* filename, char* display_name, int max_len, int max_width)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:2237:13: warning: 'void display_fiction_time_last(Time_data)' defined but not used [-Wunused-function]
+ 2237 | static void display_fiction_time_last(Time_data rtc_time)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:101:13: warning: 'lines_char_bool' defined but not used [-Wunused-variable]
+  101 | static bool lines_char_bool = 0;
+      |             ^~~~~~~~~~~~~~~
+[15/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc: In function 'void user_Task(void*)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:321:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  321 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:321:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:321:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:321:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:321:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:321:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+In file included from /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:36:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:112:13: warning: 'bool read_id3v1_tag(FILE*, char*, char*, size_t)' declared 'static' but never defined [-Wunused-function]
+  112 | static bool read_id3v1_tag(FILE *fp, char *title, char *artist, size_t max_len);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:113:13: warning: 'bool parse_mp3_frame_header(uint32_t, int*, int*, int*)' declared 'static' but never defined [-Wunused-function]
+  113 | static bool parse_mp3_frame_header(uint32_t header, int *bitrate, int *samplerate, int *channels);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:114:13: warning: 'long int find_mp3_frame(FILE*)' declared 'static' but never defined [-Wunused-function]
+  114 | static long find_mp3_frame(FILE *fp);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:115:17: warning: 'uint32_t parse_synchsafe_int(uint8_t*)' declared 'static' but never defined [-Wunused-function]
+  115 | static uint32_t parse_synchsafe_int(uint8_t *data);
+      |                 ^~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:294:13: warning: 'void display_home_time_img_last(Time_data)' defined but not used [-Wunused-function]
+  294 | static void display_home_time_img_last(Time_data rtc_time)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[16/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_network/page_network.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc: In function 'int Sleep_wake_network()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc:783:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  783 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc:783:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc:783:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc:783:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc:783:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc:783:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_network/page_network.cc:771:13: warning: 'void Forced_refresh_network()' defined but not used [-Wunused-function]
+  771 | static void Forced_refresh_network(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[17/22] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_audio/page_audio.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc: In function 'void page_audio_play_memory_1()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:395:9: warning: variable 'Image_Mono_audio_flag' set but not used [-Wunused-but-set-variable]
+  395 |     int Image_Mono_audio_flag = 0;
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:413:9: warning: unused variable 'last_minutes' [-Wunused-variable]
+  413 |     int last_minutes = rtc_time.minutes;
+      |         ^~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc: In function 'int select_music_file(int)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:527:10: warning: unused variable 'first_display' [-Wunused-variable]
+  527 |     bool first_display = true;
+      |          ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc: In function 'void delete_music_file(const char*)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1208:9: warning: unused variable 'button' [-Wunused-variable]
+ 1208 |     int button;
+      |         ^~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc: In function 'int Sleep_wake_audio()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1785:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+ 1785 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1785:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1785:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1785:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1785:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1785:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:2015:13: warning: 'void display_message(const char*)' defined but not used [-Wunused-function]
+ 2015 | static void display_message(const char* message)
+      |             ^~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:1996:13: warning: 'void truncate_filename_for_display(const char*, char*, int, int)' defined but not used [-Wunused-function]
+ 1996 | static void truncate_filename_for_display(const char* filename, char* display_name, int max_len, int max_width)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:813:18: warning: 'esp_err_t bsp_i2s_reconfig_clk_rx(uint32_t, uint32_t, i2s_slot_mode_t)' defined but not used [-Wunused-function]
+  813 | static esp_err_t bsp_i2s_reconfig_clk_rx(uint32_t rate, uint32_t bits_cfg, i2s_slot_mode_t ch)
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:470:12: warning: 'int get_music_files(music_file_t*, int)' defined but not used [-Wunused-function]
+  470 | static int get_music_files(music_file_t *file_list, int max_files)
+      |            ^~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.cc:40:22: warning: 'audio_queue' defined but not used [-Wunused-variable]
+   40 | static QueueHandle_t audio_queue = NULL;
+      |                      ^~~~~~~~~~~
+[18/22] Linking C static library esp-idf/main/libmain.a
+[19/22] Generating esp-idf/esp_system/ld/sections.ld
+[20/22] Linking CXX executable inknote_system.elf
+[21/22] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/inknote_system.bin
+[22/22] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/esp-idf/esptool_py && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/partition_table/partition-table.bin /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/inknote_system.bin
+inknote_system.bin binary size 0xd37700 bytes. Smallest app partition is 0xf00000 bytes. 0x1c8900 bytes (12%) free.
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 16MB --flash_freq 80m 0x0 apps/inknote-system/build/bootloader/bootloader.bin 0x8000 apps/inknote-system/build/partition_table/partition-table.bin 0x10000 apps/inknote-system/build/inknote_system.bin 0xf10000 apps/inknote-system/build/storage.bin
+or from the "/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build" directory
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"

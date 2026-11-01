@@ -1,0 +1,11 @@
+[  2%] Built target llama-common-base
+[  2%] Built target cpp-httplib
+[  9%] Built target ggml-base
+[ 11%] Built target ggml-blas
+[ 23%] Built target ggml-cpu
+[ 26%] Built target ggml
+[ 59%] Built target llama
+[100%] Built target llama-common
+[100%] Building CXX object tools/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.o
+[100%] Linking CXX executable ../../bin/llama-gguf-split
+[100%] Built target llama-gguf-split

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "native_ui": [
+    "import WAV",
+    "start Chinese transcription",
+    "edit punctuation",
+    "save",
+    "export TXT",
+    "export SRT",
+    "close and reopen"
+  ],
+  "audio_unchanged": true,
+  "export_matches_saved_edits": true,
+  "source_duration_seconds": 25.408,
+  "network_for_transcription": false,
+  "limits": [
+    "Short real recording only; long meeting accuracy not yet evaluated",
+    "No speaker diarization or meeting summaries"
+  ]
+}

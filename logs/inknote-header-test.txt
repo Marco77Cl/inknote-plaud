@@ -1,0 +1,1 @@
+PASS: actual C firmware header produces mono PCM16 16000 Hz, 16000 frames, 32000 data bytes

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-18",
+  "llama_commit": "797de63b2fa7396dcc8caca76834c699ac84e1c3",
+  "sherpa_version": "1.13.8",
+  "files": {
+    "summary.gguf": {
+      "sha256": "1875fb29e8c91c86615c00e92d8b4114e56bc24359adb5a8db8b36452fae4a49",
+      "bytes": 4683073536
+    },
+    "segmentation.onnx": {
+      "sha256": "220ad67ca923bef2fa91f2390c786097bf305bceb5e261d4af67b38e938e1079",
+      "bytes": 5992913
+    },
+    "embedding.onnx": {
+      "sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+      "bytes": 39593761
+    },
+    "summary.gbnf": {
+      "sha256": "b79c7f5ae89e309c7e2662d238dcfb161bd2fd0c74cb36dc5f042ba8972f145a",
+      "bytes": 483
+    },
+    "speaker-cli": {
+      "sha256": "ae290c74ff05abe43f766a4b6b8288ebb40db7a7e038f087e1eb4ab25c19eeb8",
+      "bytes": 38560
+    },
+    "llama-completion": {
+      "sha256": "dae9e1eb9c01c8cc67b7b6fe36fd79961a31356a9e74c7308bc867e2b1bef050",
+      "bytes": 10219216
+    }
+  }
+}

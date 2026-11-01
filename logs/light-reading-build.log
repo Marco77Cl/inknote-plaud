@@ -1,0 +1,102 @@
+Executing action: all (aliases: build)
+Running ninja in directory /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build
+Executing "ninja all"...
+[1/11] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/esp-idf/main && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/spiffs/spiffsgen.py 0xf0000 /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[2/11] Performing build step for 'bootloader'
+[1/1] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/bootloader/esp-idf/esptool_py && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/bootloader/bootloader.bin
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[3/11] No install step for 'bootloader'
+[4/11] Completed 'bootloader'
+[5/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/inknote/sync_transfer.cc.obj
+[6/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/page_fiction/page_fiction.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:66:44: warning: missing initializer for member 'fiction_context_t::encoding' [-Wmissing-field-initializers]
+   66 | static fiction_context_t g_fiction_ctx = {0};
+      |                                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:66:44: warning: missing initializer for member 'fiction_context_t::current_position' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:66:44: warning: missing initializer for member 'fiction_context_t::current_page' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:66:44: warning: missing initializer for member 'fiction_context_t::file_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:66:44: warning: missing initializer for member 'fiction_context_t::is_open' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:66:44: warning: missing initializer for member 'fiction_context_t::bookmarks' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:66:44: warning: missing initializer for member 'fiction_context_t::bookmark_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::encoding' [-Wmissing-field-initializers]
+   67 | static fiction_display_context_t g_display_ctx = {0};
+      |                                                    ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::file_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::is_open' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::current_position' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::current_page' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::current_font_size' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::page_buffers' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::current_buffer_index' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::lines_per_page' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::chars_per_line' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::current_font' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::bookmark_count' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:67:52: warning: missing initializer for member 'fiction_display_context_t::bookmarks' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'int Sleep_wake_fiction(bool, bool, bool)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:668:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  668 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:668:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:668:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:668:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:668:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:668:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void page_fiction_task()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:772:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  772 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:772:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:772:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:772:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:772:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:772:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void render_page_to_buffer(page_cache_t*, const char*, bool)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1419:17: warning: unused variable 'p' [-Wunused-variable]
+ 1419 |     const char* p = content;
+      |                 ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1420:17: warning: unused variable 'line_start' [-Wunused-variable]
+ 1420 |     const char* line_start = content;
+      |                 ^~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void render_current_page_ui(page_cache_t*)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1532:12: warning: unused variable 'font' [-Wunused-variable]
+ 1532 |     cFONT* font = get_font_by_encoding(g_display_ctx.current_font_size, g_display_ctx.encoding);
+      |            ^~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'void display_font_menu(font_size_t)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:1589:9: warning: unused variable 'item_height' [-Wunused-variable]
+ 1589 |     int item_height = 50;
+      |         ^~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: In function 'int legacy_fiction_file()':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:2430:10: warning: unused variable 'first_display' [-Wunused-variable]
+ 2430 |     bool first_display = true;
+      |          ^~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:2188:13: warning: 'void truncate_filename_for_display(const char*, char*, int, int)' defined but not used [-Wunused-function]
+ 2188 | static void truncate_filename_for_display(const char* filename, char* display_name, int max_len, int max_width)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:2122:13: warning: 'void display_fiction_time_last(Time_data)' defined but not used [-Wunused-function]
+ 2122 | static void display_fiction_time_last(Time_data rtc_time)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_fiction/page_fiction.cc:134:13: warning: 'lines_char_bool' defined but not used [-Wunused-variable]
+  134 | static bool lines_char_bool = 0;
+      |             ^~~~~~~~~~~~~~~
+[7/11] Linking C static library esp-idf/main/libmain.a
+[8/11] Generating esp-idf/esp_system/ld/sections.ld
+[9/11] Linking CXX executable inknote_system.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/inknote_system.bin
+[11/11] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/esp-idf/esptool_py && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/partition_table/partition-table.bin /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/inknote_system.bin
+inknote_system.bin binary size 0xdbc110 bytes. Smallest app partition is 0xf00000 bytes. 0x143ef0 bytes (8%) free.
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 16MB --flash_freq 80m 0x0 apps/inknote-system/build/bootloader/bootloader.bin 0x8000 apps/inknote-system/build/partition_table/partition-table.bin 0x10000 apps/inknote-system/build/inknote_system.bin 0xf10000 apps/inknote-system/build/storage.bin
+or from the "/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build" directory
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"

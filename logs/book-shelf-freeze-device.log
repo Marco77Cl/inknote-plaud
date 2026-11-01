@@ -1,0 +1,108 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40380e77
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (27) boot: compile time Dec 26 2025 09:27:20
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (33) boot.esp32s3: Boot SPI Speed : 80MHz
+I (37) boot.esp32s3: SPI Mode       : DIO
+I (41) boot.esp32s3: SPI Flash Size : 16MB
+I (45) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00f00000
+I (78) boot:  3 storage          Unknown data     01 82 00f10000 000f0000
+I (84) boot: End of partition table
+I (88) esp_image: segment 0: paddr=00010020 vaddr=3c110020 size=c9b68ch (13219468) map
+I (2424) esp_image: segment 1: paddr=00cab6b4 vaddr=3fc9bc00 size=04964h ( 18788) load
+I (2428) esp_image: segment 2: paddr=00cb0020 vaddr=42000020 size=105ed8h (1072856) map
+I (2618) esp_image: segment 3: paddr=00db5f00 vaddr=3fca0564 size=012bch (  4796) load
+I (2619) esp_image: segment 4: paddr=00db71c4 vaddr=40374000 size=17b18h ( 97048) load
+I (2643) esp_image: segment 5: paddr=00dcece4 vaddr=50000000 size=00020h (    32) load
+I (2653) boot: Loaded app from partition at offset 0x10000
+I (2653) boot: Disabling RNG early entropy source...
+I (2663) octal_psram: vendor id    : 0x0d (AP)
+I (2663) octal_psram: dev id       : 0x02 (generation 3)
+I (2664) octal_psram: density      : 0x03 (64 Mbit)
+I (2666) octal_psram: good-die     : 0x01 (Pass)
+I (2670) octal_psram: Latency      : 0x01 (Fixed)
+I (2675) octal_psram: VCC          : 0x01 (3V)
+I (2679) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (2684) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (2689) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (2693) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (2699) octal_psram: DriveStrength: 0x00 (1/1)
+I (2703) MSPI Timing: Enter psram timing tuning
+I (2708) esp_psram: Found 8MB PSRAM device
+I (2711) esp_psram: Speed: 80MHz
+I (2714) cpu_start: Multicore app
+I (3143) esp_psram: SPI SRAM memory test OK
+I (3152) cpu_start: Pro cpu start user code
+I (3152) cpu_start: cpu freq: 160000000 Hz
+I (3152) app_init: Application information:
+I (3152) app_init: Project name:     inknote_system
+I (3153) app_init: App version:      1
+I (3153) app_init: Compile time:     Oct 17 2026 16:32:24
+I (3153) app_init: ELF file SHA256:  96bf50124...
+I (3153) app_init: ESP-IDF:          v5.5.2
+I (3153) efuse_init: Min chip rev:     v0.0
+I (3153) efuse_init: Max chip rev:     v0.99 
+I (3154) efuse_init: Chip rev:         v0.2
+I (3154) heap_init: Initializing. RAM available for dynamic allocation:
+I (3154) heap_init: At 3FCB0AD8 len 00038C38 (227 KiB): RAM
+I (3154) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (3154) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (3155) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (3155) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (3156) spi_flash: detected chip: generic
+I (3156) spi_flash: flash io: dio
+I (3157) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (3158) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (3158) main_task: Started on CPU0
+I (3168) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (3168) main_task: Calling app_main()
+E (3198) EVEN: Hello world!
+
+I (3248) _sdcard: SD card mounted at /sdcard
+Name: SN128
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 121942MB
+CSD: ver=2, sector_size=512, capacity=249737216 read_bl_len=9
+SSR: bus_width=4
+I (3248) I2C_BSP: I2C master bus initialized on port 0
+I (3298) I2C_BSP: All I2C devices initialized
+SPIFFS mounted - Total size: 875 KB used: 87 KB
+I (3408) PCF85063: The RTC initialization of PCF85063 has been completed
+I (3408) axp2101: Init PMU SUCCESS!
+I (3428) page_audio: i2s driver init success
+I (3428) ES8311: es i2c_cfg bus_handle=0x3cdb7db0 addr=0x30
+I (3428) ES8311: Work in Slave mode
+I (3438) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:3
+I (3438) I2S_IF: STD Mode 1 bits:16/16 channel:2 sample_rate:16000 mask:3
+I (3448) Adev_Codec: Open codec device OK
+I (3448) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:1
+I (3458) I2S_IF: STD Mode 0 bits:16/16 channel:2 sample_rate:16000 mask:1
+I (3458) Adev_Codec: Open codec device OK
+I (3468) ES8311: ES8311 codec initialized successfully
+I (3468) page_audio: es8311 codec init success
+I (3518) page_audio: mute setting 0
+I (3518) page_audio: audio player init success
+I (3518) page_audio: Audio subsystem ready (muted, volume=0)
+E (3928) main: mode = 0
+I (3938) network: Turn off WiFi
+E (3948) EVEN: Restarting now.
+
+I (3948) BAT_Power: BAT_Power = 100%

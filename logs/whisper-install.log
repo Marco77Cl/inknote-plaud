@@ -1,0 +1,21 @@
+Cloning into 'tools/whisper.cpp'...
+Note: switching to '48f628a84833905ee4a0658ee6d4a5c915ce1997'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Requirement already satisfied: cmake in ./tools/host-venv/lib/python3.9/site-packages (4.4.4)
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/host-venv/bin/python -m pip install --upgrade pip' command.

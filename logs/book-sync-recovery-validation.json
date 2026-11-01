@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-25",
+  "issue": "New imported book missing from device shelf",
+  "observed_failure": "USB unresponsive while app retained connected indicator",
+  "book": "芥川龙之介小说集",
+  "chapters": 118,
+  "text_bytes": 1764675,
+  "package_sha256": "c5834cd080c42149cf574ff9ace66aba39d7ed11b01c20801c47142a122fc298",
+  "native_ui_result": "同步完成 · SHA-256 校验通过",
+  "fixes": [
+    "USB transport exception clears stale connected/token/base state",
+    "Import result explicitly states Mac library import still needs device sync"
+  ],
+  "checks": [
+    "Application compile and codesign verified",
+    "Four USB pseudo-terminal scenarios passed"
+  ],
+  "device_recovery": "USB chip query plus reset; no firmware flash or TF erase",
+  "pending": [
+    "Reader freeze cause remains unconfirmed"
+  ],
+  "device_shelf": "User confirmed book visible and opens"
+}

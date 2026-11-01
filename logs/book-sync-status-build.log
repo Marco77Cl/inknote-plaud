@@ -1,0 +1,18 @@
+BookLibrary.swift:84:15: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+82 |                 List(selection:$library.selected){ForEach(library.books.filter{$0.metadata.kind==category}){book in VStack(alignment:.leading){Text(book.metadata.title);Text("\(book.metadata.author) · \(book.metadata.chapters.count) 章").font(.caption).foregroundStyle(.secondary)}.tag(book.id)}}.frame(minWidth:230)
+83 |                 ScrollView{Text(library.preview.isEmpty ? "选择书籍预览正文，或导入 EPUB / TXT。":library.preview).textSelection(.enabled).frame(maxWidth:.infinity,alignment:.leading).padding()}.frame(minWidth:350)
+84 |             }.onChange(of:library.selected){library.select($0)}.onChange(of:category){_ in library.select(nil)}
+   |               `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+85 |             HStack{Button("同步所选到设备"){Task{await library.sync(studio)}}.disabled(library.current==nil || !studio.connected || studio.busy || library.busy);Button("导出所选到 TF 卡"){library.exportTF()}.disabled(library.current==nil || library.busy);if library.busy{ProgressView().controlSize(.small)};Text("预览最多 20,000 字；设备保存完整正文。 ").font(.caption).foregroundStyle(.secondary)}
+86 |             Text(library.status).font(.callout).textSelection(.enabled)
+
+BookLibrary.swift:84:65: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+82 |                 List(selection:$library.selected){ForEach(library.books.filter{$0.metadata.kind==category}){book in VStack(alignment:.leading){Text(book.metadata.title);Text("\(book.metadata.author) · \(book.metadata.chapters.count) 章").font(.caption).foregroundStyle(.secondary)}.tag(book.id)}}.frame(minWidth:230)
+83 |                 ScrollView{Text(library.preview.isEmpty ? "选择书籍预览正文，或导入 EPUB / TXT。":library.preview).textSelection(.enabled).frame(maxWidth:.infinity,alignment:.leading).padding()}.frame(minWidth:350)
+84 |             }.onChange(of:library.selected){library.select($0)}.onChange(of:category){_ in library.select(nil)}
+   |                                                                 `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+85 |             HStack{Button("同步所选到设备"){Task{await library.sync(studio)}}.disabled(library.current==nil || !studio.connected || studio.busy || library.busy);Button("导出所选到 TF 卡"){library.exportTF()}.disabled(library.current==nil || library.busy);if library.busy{ProgressView().controlSize(.small)};Text("预览最多 20,000 字；设备保存完整正文。 ").font(.caption).foregroundStyle(.secondary)}
+86 |             Text(library.status).font(.callout).textSelection(.enabled)
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+build/InkNote Studio.app: replacing existing signature

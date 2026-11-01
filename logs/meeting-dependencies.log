@@ -1,0 +1,14 @@
+Collecting sherpa-onnx
+  Downloading sherpa_onnx-1.13.8-cp39-cp39-macosx_11_0_arm64.whl (2.1 MB)
+Collecting soundfile
+  Downloading soundfile-0.13.1-py2.py3-none-macosx_11_0_arm64.whl (1.1 MB)
+Collecting sherpa-onnx-core==1.13.8
+  Downloading sherpa_onnx_core-1.13.8-py3-none-macosx_11_0_arm64.whl (9.6 MB)
+Collecting numpy
+  Using cached numpy-2.0.2-cp39-cp39-macosx_14_0_arm64.whl (5.3 MB)
+Requirement already satisfied: cffi>=1.0 in ./tools/host-venv/lib/python3.9/site-packages (from soundfile) (2.0.0)
+Requirement already satisfied: pycparser in ./tools/host-venv/lib/python3.9/site-packages (from cffi>=1.0->soundfile) (2.23)
+Installing collected packages: sherpa-onnx-core, numpy, soundfile, sherpa-onnx
+Successfully installed numpy-2.0.2 sherpa-onnx-1.13.8 sherpa-onnx-core-1.13.8 soundfile-0.13.1
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/host-venv/bin/python -m pip install --upgrade pip' command.

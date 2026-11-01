@@ -1,0 +1,53 @@
+InkNoteStudio.swift:80:60: warning: conformance of 'Studio' to protocol 'NetServiceBrowserDelegate' crosses into main actor-isolated code and can cause data races; this is an error in the Swift 6 language mode [#ConformanceIsolation]
+ 78 | }
+ 79 | 
+ 80 | @MainActor final class Studio: NSObject, ObservableObject, NetServiceBrowserDelegate, NetServiceDelegate {
+    |                                                            |- warning: conformance of 'Studio' to protocol 'NetServiceBrowserDelegate' crosses into main actor-isolated code and can cause data races; this is an error in the Swift 6 language mode [#ConformanceIsolation]
+    |                                                            |- note: isolate this conformance to the main actor with '@MainActor'
+    |                                                            `- note: turn data races into runtime errors with '@preconcurrency'
+ 81 |     @Published var address=""
+ 82 |     @Published var code=""
+    :
+ 95 |     var player:AVAudioPlayer?
+ 96 |     override init() { super.init(); browser.delegate=self; browser.searchForServices(ofType:"_inknote._tcp.",inDomain:"local.") }
+ 97 |     func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: NetService, moreComing: Bool) { services.append(service); service.delegate=self; service.resolve(withTimeout:5) }
+    |          |- note: main actor-isolated instance method 'netServiceBrowser(_:didFind:moreComing:)' cannot satisfy nonisolated requirement
+    |          `- note: mark instance method 'netServiceBrowser(_:didFind:moreComing:)' 'nonisolated'
+ 98 |     func netServiceDidResolveAddress(_ sender: NetService) {
+ 99 |         guard let host=sender.hostName else{return}; let item="\(host):\(sender.port)"
+    :
+101 |         if address.isEmpty { address=item }
+102 |     }
+103 |     func netServiceBrowser(_ browser: NetServiceBrowser, didRemove service: NetService, moreComing: Bool) {
+    |          |- note: main actor-isolated instance method 'netServiceBrowser(_:didRemove:moreComing:)' cannot satisfy nonisolated requirement
+    |          `- note: mark instance method 'netServiceBrowser(_:didRemove:moreComing:)' 'nonisolated'
+104 |         if let host=service.hostName { devices.removeAll{$0=="\(host):\(service.port)"} }
+105 |         services.removeAll{$0==service}
+
+InkNoteStudio.swift:80:87: warning: conformance of 'Studio' to protocol 'NetServiceDelegate' crosses into main actor-isolated code and can cause data races; this is an error in the Swift 6 language mode [#ConformanceIsolation]
+ 78 | }
+ 79 | 
+ 80 | @MainActor final class Studio: NSObject, ObservableObject, NetServiceBrowserDelegate, NetServiceDelegate {
+    |                                                                                       |- warning: conformance of 'Studio' to protocol 'NetServiceDelegate' crosses into main actor-isolated code and can cause data races; this is an error in the Swift 6 language mode [#ConformanceIsolation]
+    |                                                                                       |- note: isolate this conformance to the main actor with '@MainActor'
+    |                                                                                       `- note: turn data races into runtime errors with '@preconcurrency'
+ 81 |     @Published var address=""
+ 82 |     @Published var code=""
+    :
+ 96 |     override init() { super.init(); browser.delegate=self; browser.searchForServices(ofType:"_inknote._tcp.",inDomain:"local.") }
+ 97 |     func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: NetService, moreComing: Bool) { services.append(service); service.delegate=self; service.resolve(withTimeout:5) }
+ 98 |     func netServiceDidResolveAddress(_ sender: NetService) {
+    |          |- note: main actor-isolated instance method 'netServiceDidResolveAddress' cannot satisfy nonisolated requirement
+    |          `- note: mark instance method 'netServiceDidResolveAddress' 'nonisolated'
+ 99 |         guard let host=sender.hostName else{return}; let item="\(host):\(sender.port)"
+100 |         if !devices.contains(item) { devices.append(item) }
+
+InkNoteStudio.swift:169:139: error: '==' is not a postfix unary operator
+167 |         } catch {status=error.localizedDescription+" 设备保持传输模式后，可点击下载重试。"}
+168 |     }
+169 |     func chooseFolder(){let p=NSOpenPanel();p.canChooseDirectories=true;p.canChooseFiles=false;p.canCreateDirectories=true;if p.runModal()==.OK,let u=p.url{folder=u;downloaded=[]}}
+    |                                                                                                                                           `- error: '==' is not a postfix unary operator
+170 |     func play(_ r:Recording){do{player=try AVAudioPlayer(contentsOf:local(r));player?.play();status="正在播放 \(r.name)"}catch{status=error.localizedDescription}}
+171 | }
+
+[#ConformanceIsolation]: <https://docs.swift.org/compiler/documentation/diagnostics/conformance-isolation>

@@ -1,0 +1,1 @@
+PASS cancellation terminates subprocess and clears busy state without producing summary

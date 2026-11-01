@@ -1,0 +1,25 @@
+{
+  "valid": {
+    "exit": 0,
+    "peak": 100,
+    "mic_verified": false
+  },
+  "silence": {
+    "exit": 0,
+    "peak": 0,
+    "mic_verified": false
+  },
+  "stereo": {
+    "exit": 2,
+    "peak": 100,
+    "mic_verified": false
+  },
+  "empty": {
+    "exit": 4,
+    "peak": 0,
+    "mic_verified": false
+  },
+  "truncated": {
+    "exit": 3
+  }
+}

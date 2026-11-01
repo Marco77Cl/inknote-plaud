@@ -1,0 +1,8 @@
+Collecting cmake
+  Downloading cmake-4.4.4-py3-none-macosx_10_10_universal2.whl (54.4 MB)
+Collecting ninja
+  Downloading ninja-1.13.2-py3-none-macosx_10_9_universal2.whl (306 kB)
+Installing collected packages: ninja, cmake
+Successfully installed cmake-4.4.4 ninja-1.13.2
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/host-venv/bin/python -m pip install --upgrade pip' command.

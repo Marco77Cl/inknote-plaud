@@ -1,0 +1,44 @@
+{
+  "file": "recordings/factory-test.wav",
+  "file_size_bytes": 686124,
+  "format": {
+    "compression": "NONE",
+    "channels": 1,
+    "sample_rate_hz": 16000,
+    "sample_width_bytes": 2,
+    "bits_per_sample": 16,
+    "frames_declared": 343040,
+    "data_bytes_declared": 686080
+  },
+  "read": {
+    "frames_read": 343040,
+    "data_bytes_read": 686080,
+    "leftover_bytes": 0,
+    "read_error": null
+  },
+  "duration_seconds": 21.44,
+  "duration_declared_seconds": 21.44,
+  "sample_count": 343040,
+  "zero_sample_count": 14307,
+  "zero_sample_ratio": 0.041706506529850744,
+  "peak": 483,
+  "peak_normalized": 0.014739990234375,
+  "rms": 54.54193925085053,
+  "rms_dbfs": -55.57438719284274,
+  "silence_suspected": false,
+  "near_silence_suspected": false,
+  "mic_verified": false,
+  "checks": {
+    "pcm_uncompressed": true,
+    "sample_rate_16000": true,
+    "bits_16": true,
+    "mono": true,
+    "non_zero_frames": true,
+    "data_length_matches_header": true
+  },
+  "errors": [],
+  "warnings": [
+    "14307/343040 samples (4.17%) are exactly zero"
+  ],
+  "ok": true
+}

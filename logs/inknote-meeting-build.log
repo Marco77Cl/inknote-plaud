@@ -1,0 +1,7 @@
+build/InkNote Studio.app/Contents/Resources/Speech/whisper-cli: replacing existing signature
+build/InkNote Studio.app/Contents/Resources/Meeting/libonnxruntime.dylib: replacing existing signature
+build/InkNote Studio.app/Contents/Resources/Meeting/libsherpa-onnx-c-api.dylib: replacing existing signature
+build/InkNote Studio.app/Contents/Resources/Meeting/libsherpa-onnx-cxx-api.dylib: replacing existing signature
+build/InkNote Studio.app/Contents/Resources/Meeting/speaker-cli: replacing existing signature
+build/InkNote Studio.app/Contents/Resources/Meeting/llama-completion: replacing existing signature
+build/InkNote Studio.app: replacing existing signature

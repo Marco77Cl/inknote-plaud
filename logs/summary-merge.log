@@ -1,0 +1,6 @@
+gguf_merge: tools/meeting-models/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf -> tools/meeting-models/qwen2.5-7b-instruct-q4_k_m.gguf
+gguf_merge: reading metadata tools/meeting-models/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf ...[3Ddone
+gguf_merge: reading metadata tools/meeting-models/qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf ...[3Ddone
+gguf_merge: writing tensors tools/meeting-models/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf ...[3Ddone
+gguf_merge: writing tensors tools/meeting-models/qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf ...[3Ddone
+gguf_merge: tools/meeting-models/qwen2.5-7b-instruct-q4_k_m.gguf merged from 2 split with 339 tensors.

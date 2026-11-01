@@ -1,0 +1,6 @@
+root ::= "{" ws "\"key_points\"" ws ":" ws array ws "," ws "\"decisions\"" ws ":" ws array ws "," ws "\"actions\"" ws ":" ws array ws "}"
+array ::= "[" ws (point (ws "," ws point)*)? ws "]"
+point ::= "{" ws "\"text\"" ws ":" ws string ws "," ws "\"sources\"" ws ":" ws "[" ws integer (ws "," ws integer)* ws "]" ws "}"
+string ::= "\"" ([^"\\\x00-\x1F] | "\\" (["\\/bfnrt] | "u" [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F]))* "\""
+integer ::= "0" | [1-9] [0-9]*
+ws ::= [ \t\n\r]*

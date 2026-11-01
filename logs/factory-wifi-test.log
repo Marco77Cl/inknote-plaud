@@ -1,0 +1,483 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037c652
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (27) boot: compile time Dec 26 2025 09:27:20
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (33) boot.esp32s3: Boot SPI Speed : 80MHz
+I (37) boot.esp32s3: SPI Mode       : DIO
+I (41) boot.esp32s3: SPI Flash Size : 16MB
+I (45) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00f00000
+I (78) boot:  3 storage          Unknown data     01 82 00f10000 000f0000
+I (84) boot: End of partition table
+I (88) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=be5ad0h (12475088) map
+I (2293) esp_image: segment 1: paddr=00bf5af8 vaddr=3fc99c00 size=05ca8h ( 23720) load
+I (2298) esp_image: segment 2: paddr=00bfb7a8 vaddr=40374000 size=04870h ( 18544) load
+I (2303) esp_image: segment 3: paddr=00c00020 vaddr=42000020 size=f62f0h (1008368) map
+I (2482) esp_image: segment 4: paddr=00cf6318 vaddr=40378870 size=112d0h ( 70352) load
+I (2498) esp_image: segment 5: paddr=00d075f0 vaddr=600fe100 size=0001ch (    28) load
+I (2507) boot: Loaded app from partition at offset 0x10000
+I (2507) boot: Disabling RNG early entropy source...
+I (2518) octal_psram: vendor id    : 0x0d (AP)
+I (2518) octal_psram: dev id       : 0x02 (generation 3)
+I (2518) octal_psram: density      : 0x03 (64 Mbit)
+I (2520) octal_psram: good-die     : 0x01 (Pass)
+I (2525) octal_psram: Latency      : 0x01 (Fixed)
+I (2529) octal_psram: VCC          : 0x01 (3V)
+I (2533) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (2538) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (2543) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (2548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (2553) octal_psram: DriveStrength: 0x00 (1/1)
+I (2558) MSPI Timing: PSRAM timing tuning index: 4
+I (2562) esp_psram: Found 8MB PSRAM device
+I (2566) esp_psram: Speed: 80MHz
+I (2569) cpu_start: Multicore app
+I (2998) esp_psram: SPI SRAM memory test OK
+I (3007) cpu_start: Pro cpu start user code
+I (3007) cpu_start: cpu freq: 160000000 Hz
+I (3007) app_init: Application information:
+I (3007) app_init: Project name:     ESP32-S3_ePaper-3.97
+I (3012) app_init: App version:      1
+I (3016) app_init: Compile time:     Jan 22 2026 11:51:15
+I (3021) app_init: ELF file SHA256:  9e7ed24d2...
+I (3025) app_init: ESP-IDF:          v5.4.1
+I (3029) efuse_init: Min chip rev:     v0.0
+I (3033) efuse_init: Max chip rev:     v0.99 
+I (3037) efuse_init: Chip rev:         v0.2
+I (3041) heap_init: Initializing. RAM available for dynamic allocation:
+I (3047) heap_init: At 3FCAC998 len 0003CD78 (243 KiB): RAM
+I (3053) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (3058) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (3063) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM
+I (3069) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (3076) spi_flash: detected chip: generic
+I (3079) spi_flash: flash io: dio
+I (3083) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (3089) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (3096) main_task: Started on CPU0
+I (3106) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (3106) main_task: Calling app_main()
+E (3116) EVEN: Hello world!
+
+I (3116) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3126) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3126) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3136) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3146) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3156) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (3216) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3216) _sdcard: SD card mounted at /sdcard
+Name: SN128
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 121942MB
+CSD: ver=2, sector_size=512, capacity=249737216 read_bl_len=9
+SSR: bus_width=4
+I (3226) I2C_BSP: I2C master bus initialized on port 0
+I (3286) I2C_BSP: All I2C devices initialized
+SPIFFS mounted - Total size: 875 KB used: 87 KB
+I (3386) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3386) gpio: GPIO[45]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3406) PCF85063: The RTC initialization of PCF85063 has been completed
+I (3406) axp2101: Init PMU SUCCESS!
+I (3416) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3416) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3426) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3426) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3446) page_audio: i2s driver init success
+I (3446) ES8311: es i2c_cfg bus_handle=0x3ccf7de4 addr=0x30
+I (3456) ES8311: Work in Slave mode
+I (3456) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (3456) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:3
+I (3466) I2S_IF: STD Mode 1 bits:16/16 channel:2 sample_rate:16000 mask:3
+I (3486) Adev_Codec: Open codec device OK
+I (3486) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:1
+I (3486) I2S_IF: STD Mode 0 bits:16/16 channel:2 sample_rate:16000 mask:1
+I (3506) Adev_Codec: Open codec device OK
+I (3506) ES8311: ES8311 codec initialized successfully
+I (3506) page_audio: es8311 codec init success
+I (3556) page_audio: mute setting 0
+I (3556) page_audio: audio player init success
+I (3556) page_audio: Audio subsystem ready (muted, volume=0)
+I (3556) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3566) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3566) gpio: GPIO[46]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3576) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+E (3996) main: mode = 0
+E (3996) i2c.master: I2C transaction unexpected nack detected
+E (3996) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (3996) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4006) i2c.master: I2C transaction unexpected nack detected
+E (4006) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4016) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4026) i2c.master: I2C transaction unexpected nack detected
+E (4026) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4036) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4046) i2c.master: I2C transaction unexpected nack detected
+E (4046) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4056) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4066) i2c.master: I2C transaction unexpected nack detected
+E (4066) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4076) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+I (4096) network: Turn off WiFi
+E (4096) EVEN: Restarting now.
+
+I (4106) BAT_Power: BAT_Power = 100%
+I (12326) home: EPD_Sleep
+I (19046) home: EPD_Init
+I (24336) BAT_Power: BAT_Power = 100%
+I (26106) BAT_Power: BAT_Power = 100%
+I (29636) network: Turn on WiFi and enter the distribution network
+W (29646) SsidManager: NVS namespace wifi doesn't exist
+I (29646) DnsServer: Starting DNS server
+I (29646) pp: pp rom version: e7ae62f
+I (29646) net80211: net80211 rom version: e7ae62f
+I (29666) wifi:wifi driver task: 3fcde688, prio:23, stack:6656, core=0
+I (29666) wifi:wifi firmware version: 79fa3f41ba
+I (29666) wifi:wifi certification version: v7.0
+I (29666) wifi:config NVS flash: enabled
+I (29666) wifi:config nano formatting: disabled
+I (29676) wifi:Init data frame dynamic rx buffer num: 8
+I (29676) wifi:Init dynamic rx mgmt buffer num: 5
+I (29686) wifi:Init management short buffer num: 32
+I (29686) wifi:Init dynamic tx buffer num: 32
+I (29696) wifi:Init static tx FG buffer num: 2
+I (29696) wifi:Init static rx buffer size: 1600
+I (29706) wifi:Init static rx buffer num: 6
+I (29706) wifi:Init dynamic rx buffer num: 8
+I (29706) wifi_init: rx ba win: 6
+I (29716) wifi_init: accept mbox: 6
+I (29716) wifi_init: tcpip mbox: 32
+I (29716) wifi_init: udp mbox: 6
+I (29726) wifi_init: tcp mbox: 6
+I (29726) wifi_init: tcp tx win: 5760
+I (29726) wifi_init: tcp rx win: 5760
+I (29736) wifi_init: tcp mss: 1440
+I (29746) wifi:Set ps type: 0, coexist: 0
+
+I (29746) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11
+W (29746) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (29796) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (29806) wifi:mode : sta (44:b1:76:b6:a4:50) + softAP (44:b1:76:b6:a4:51)
+I (29806) wifi:enable tsf
+I (29806) wifi:Total power save buffer number: 16
+I (29816) wifi:Init max length of beacon: 752/752
+I (29816) wifi:Init max length of beacon: 752/752
+I (29826) WifiConfigurationAp: Access Point started with SSID -A451
+I (29826) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (29836) WifiConfigurationAp: Web server started
+I (29836) network: The Web distribution network mode has been entered. Please connect your mobile phone to the ESP32 hotspot SSID: -A451 and visit 192.168.4.1
+I (30886) clock: EPD_Sleep
+I (153646) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (153646) wifi:station: be:01:1c:d8:49:02 join, AID=1, bgn, 20
+I (153646) WifiConfigurationAp: Station be:01:1c:d8:49:02 joined, AID=1
+I (154896) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (156826) DnsServer: Sending DNS response to 192.168.4.1
+I (156836) DnsServer: Sending DNS response to 192.168.4.1
+I (156836) wifi:<ba-add>idx:2 (ifx:1, be:01:1c:d8:49:02), tid:0, ssn:2813, winSize:64
+I (156836) DnsServer: Sending DNS response to 192.168.4.1
+W (157936) httpd_txrx: httpd_sock_err: error in recv : 104
+I (158116) WifiConfigurationAp: SSID: Eiswein, RSSI: -30, Authmode: 3
+I (158116) WifiConfigurationAp: SSID: DIRECT-71-HP M30 LaserJet, RSSI: -58, Authmode: 3
+I (158126) WifiConfigurationAp: SSID: Happyfamily, RSSI: -67, Authmode: 3
+I (158136) WifiConfigurationAp: SSID: KT, RSSI: -81, Authmode: 3
+I (158136) WifiConfigurationAp: SSID: midea_ed_0228, RSSI: -87, Authmode: 0
+I (158146) WifiConfigurationAp: SSID: onepiece, RSSI: -90, Authmode: 4
+I (158946) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (158946) wifi:station: 66:80:9e:58:7d:27 join, AID=2, bgn, 20
+I (158946) WifiConfigurationAp: Station 66:80:9e:58:7d:27 joined, AID=2
+I (159386) DnsServer: Sending DNS response to 192.168.4.1
+I (159386) DnsServer: Sending DNS response to 192.168.4.1
+I (161636) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3
+I (163196) WifiConfigurationAp: SSID: Eiswein, RSSI: -30, Authmode: 3
+I (163196) WifiConfigurationAp: SSID: Happyfamily, RSSI: -52, Authmode: 3
+I (163206) WifiConfigurationAp: SSID: DIRECT-71-HP M30 LaserJet, RSSI: -62, Authmode: 3
+I (163206) WifiConfigurationAp: SSID: Eiswein, RSSI: -62, Authmode: 3
+I (163216) WifiConfigurationAp: SSID: lthw, RSSI: -68, Authmode: 3
+I (163216) WifiConfigurationAp: SSID: lthw, RSSI: -73, Authmode: 3
+I (163226) WifiConfigurationAp: SSID: KT, RSSI: -80, Authmode: 3
+I (163226) WifiConfigurationAp: SSID: midea_ed_0228, RSSI: -88, Authmode: 0
+I (163236) WifiConfigurationAp: SSID: 1202-5g, RSSI: -89, Authmode: 3
+I (163246) WifiConfigurationAp: SSID: onepiece, RSSI: -90, Authmode: 4
+I (163246) WifiConfigurationAp: SSID: CU_Q2yC, RSSI: -91, Authmode: 4
+I (163556) DnsServer: Sending DNS response to 192.168.4.1
+I (163556) DnsServer: Sending DNS response to 192.168.4.1
+I (163566) DnsServer: Sending DNS response to 192.168.4.1
+I (163586) wifi:<ba-add>idx:3 (ifx:1, 66:80:9e:58:7d:27), tid:0, ssn:3271, winSize:64
+W (163606) httpd_txrx: httpd_sock_err: error in recv : 104
+W (163746) httpd_txrx: httpd_sock_err: error in recv : 104
+I (164186) wifi:station: 66:80:9e:58:7d:27 leave, AID = 2, reason = 8, bss_flags is 33721443, bss:0x3fce6d44
+I (164196) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (164196) wifi:<ba-del>idx:3, tid:0
+I (164196) WifiConfigurationAp: Station 66:80:9e:58:7d:27 left, AID=2
+I (168286) WifiConfigurationAp: SSID: Eiswein, RSSI: -30, Authmode: 3
+I (168286) WifiConfigurationAp: SSID: Happyfamily, RSSI: -52, Authmode: 3
+I (168286) WifiConfigurationAp: SSID: DIRECT-71-HP M30 LaserJet, RSSI: -62, Authmode: 3
+I (168296) WifiConfigurationAp: SSID: Eiswein, RSSI: -62, Authmode: 3
+I (168306) WifiConfigurationAp: SSID: lthw, RSSI: -68, Authmode: 3
+I (168306) WifiConfigurationAp: SSID: lthw, RSSI: -73, Authmode: 3
+I (168316) WifiConfigurationAp: SSID: KT, RSSI: -80, Authmode: 3
+I (168316) WifiConfigurationAp: SSID: midea_ed_0228, RSSI: -88, Authmode: 0
+I (168326) WifiConfigurationAp: SSID: 1202-5g, RSSI: -89, Authmode: 3
+I (168326) WifiConfigurationAp: SSID: onepiece, RSSI: -90, Authmode: 4
+I (168336) WifiConfigurationAp: SSID: CU_Q2yC, RSSI: -91, Authmode: 4
+W (172676) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+I (172696) WifiConfigurationAp: Connecting to WiFi Eiswein
+I (176026) wifi:primary chan differ, old=1, new=10, start CSA timer
+I (176426) wifi:switch to channel 10
+I (176426) wifi:ap channel adjust o:1,0 n:10,0
+I (176426) wifi:new:<10,0>, old:<1,0>, ap:<10,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (176436) wifi:new:<10,0>, old:<10,0>, ap:<10,0>, sta:<10,0>, prof:1, snd_ch_cfg:0x0
+I (176436) wifi:state: init -> auth (0xb0)
+I (176496) wifi:state: auth -> assoc (0x0)
+I (176526) wifi:state: assoc -> run (0x10)
+I (176546) wifi:connected with Eiswein, aid = 3, channel 10, BW20, bssid = 50:4f:3b:1e:ce:5c
+I (176546) wifi:security: WPA2-PSK, phy: bgn, rssi: -29
+I (176566) wifi:pm start, type: 0
+
+I (176566) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (176566) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (176576) WifiConfigurationAp: Connected to WiFi Eiswein
+I (176586) wifi:state: run -> init (0x0)
+I (176596) wifi:pm stop, total sleep time: 0 us / 22037 us
+
+I (176596) wifi:new:<10,0>, old:<10,0>, ap:<10,0>, sta:<10,0>, prof:1, snd_ch_cfg:0x0
+I (176596) WifiConfigurationAp: Save SSID Eiswein 7
+I (180476) WifiConfigurationAp: Rebooting...
+I (180886) wifi:station: be:01:1c:d8:49:02 leave, AID = 1, reason = 2, bss_flags is 33721459, bss:0x3fce6980
+I (180886) wifi:new:<10,0>, old:<10,0>, ap:<10,0>, sta:<10,0>, prof:1, snd_ch_cfg:0x0
+I (180886) wifi:<ba-del>idx:2, tid:0
+I (180896) WifiConfigurationAp: Station be:01:1c:d8:49:02 left, AID=1
+I (181066) wifi:flush txq
+I (181066) wifi:stop sw txq
+I (181066) wifi:lmac stop hw txq
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375e99
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (26) boot: compile time Dec 26 2025 09:27:20
+I (26) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (29) boot: efuse block revision: v1.4
+I (33) boot.esp32s3: Boot SPI Speed : 80MHz
+I (37) boot.esp32s3: SPI Mode       : DIO
+I (40) boot.esp32s3: SPI Flash Size : 16MB
+I (44) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00f00000
+I (77) boot:  3 storage          Unknown data     01 82 00f10000 000f0000
+I (84) boot: End of partition table
+I (87) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=be5ad0h (12475088) map
+I (2292) esp_image: segment 1: paddr=00bf5af8 vaddr=3fc99c00 size=05ca8h ( 23720) load
+I (2298) esp_image: segment 2: paddr=00bfb7a8 vaddr=40374000 size=04870h ( 18544) load
+I (2302) esp_image: segment 3: paddr=00c00020 vaddr=42000020 size=f62f0h (1008368) map
+I (2482) esp_image: segment 4: paddr=00cf6318 vaddr=40378870 size=112d0h ( 70352) load
+I (2497) esp_image: segment 5: paddr=00d075f0 vaddr=600fe100 size=0001ch (    28) load
+I (2507) boot: Loaded app from partition at offset 0x10000
+I (2507) boot: Disabling RNG early entropy source...
+I (2517) octal_psram: vendor id    : 0x0d (AP)
+I (2517) octal_psram: dev id       : 0x02 (generation 3)
+I (2518) octal_psram: density      : 0x03 (64 Mbit)
+I (2520) octal_psram: good-die     : 0x01 (Pass)
+I (2524) octal_psram: Latency      : 0x01 (Fixed)
+I (2528) octal_psram: VCC          : 0x01 (3V)
+I (2533) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (2538) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (2543) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (2547) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (2553) octal_psram: DriveStrength: 0x00 (1/1)
+I (2557) MSPI Timing: PSRAM timing tuning index: 5
+I (2561) esp_psram: Found 8MB PSRAM device
+I (2565) esp_psram: Speed: 80MHz
+I (2568) cpu_start: Multicore app
+I (3004) esp_psram: SPI SRAM memory test OK
+I (3013) cpu_start: Pro cpu start user code
+I (3013) cpu_start: cpu freq: 160000000 Hz
+I (3013) app_init: Application information:
+I (3013) app_init: Project name:     ESP32-S3_ePaper-3.97
+I (3018) app_init: App version:      1
+I (3022) app_init: Compile time:     Jan 22 2026 11:51:15
+I (3027) app_init: ELF file SHA256:  9e7ed24d2...
+I (3031) app_init: ESP-IDF:          v5.4.1
+I (3035) efuse_init: Min chip rev:     v0.0
+I (3039) efuse_init: Max chip rev:     v0.99 
+I (3043) efuse_init: Chip rev:         v0.2
+I (3047) heap_init: Initializing. RAM available for dynamic allocation:
+I (3053) heap_init: At 3FCAC998 len 0003CD78 (243 KiB): RAM
+I (3059) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (3064) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (3069) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM
+I (3075) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (3082) spi_flash: detected chip: generic
+I (3085) spi_flash: flash io: dio
+I (3089) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (3095) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (3102) main_task: Started on CPU0
+I (3112) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (3112) main_task: Calling app_main()
+E (3142) EVEN: Hello world!
+
+I (3142) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3142) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3152) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3162) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3172) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3182) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (3242) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3242) _sdcard: SD card mounted at /sdcard
+Name: SN128
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 121942MB
+CSD: ver=2, sector_size=512, capacity=249737216 read_bl_len=9
+SSR: bus_width=4
+I (3252) I2C_BSP: I2C master bus initialized on port 0
+I (3312) I2C_BSP: All I2C devices initialized
+SPIFFS mounted - Total size: 875 KB used: 87 KB
+I (3412) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3412) gpio: GPIO[45]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3432) PCF85063: The RTC initialization of PCF85063 has been completed
+I (3432) axp2101: Init PMU SUCCESS!
+I (3442) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3442) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3452) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3452) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3472) page_audio: i2s driver init success
+I (3472) ES8311: es i2c_cfg bus_handle=0x3ccf7de4 addr=0x30
+I (3482) ES8311: Work in Slave mode
+I (3482) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (3482) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:3
+I (3492) I2S_IF: STD Mode 1 bits:16/16 channel:2 sample_rate:16000 mask:3
+I (3512) Adev_Codec: Open codec device OK
+I (3512) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:1
+I (3512) I2S_IF: STD Mode 0 bits:16/16 channel:2 sample_rate:16000 mask:1
+I (3532) Adev_Codec: Open codec device OK
+I (3532) ES8311: ES8311 codec initialized successfully
+I (3532) page_audio: es8311 codec init success
+I (3582) page_audio: mute setting 0
+I (3582) page_audio: audio player init success
+I (3582) page_audio: Audio subsystem ready (muted, volume=0)
+I (3582) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3592) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3592) gpio: GPIO[46]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (3602) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+E (4022) main: mode = 0
+E (4022) i2c.master: I2C transaction unexpected nack detected
+E (4022) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4022) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4032) i2c.master: I2C transaction unexpected nack detected
+E (4032) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4042) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4052) i2c.master: I2C transaction unexpected nack detected
+E (4052) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4062) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4072) i2c.master: I2C transaction unexpected nack detected
+E (4072) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4082) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+E (4092) i2c.master: I2C transaction unexpected nack detected
+E (4092) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed
+E (4102) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed
+I (4122) network: WiFi is enabled and the connection to WiFi begins
+I (6762) pp: pp rom version: e7ae62f
+I (6762) net80211: net80211 rom version: e7ae62f
+I (6772) wifi:wifi driver task: 3fccc074, prio:23, stack:6656, core=0
+I (6772) wifi:wifi firmware version: 79fa3f41ba
+I (6772) wifi:wifi certification version: v7.0
+I (6772) wifi:config NVS flash: disabled
+I (6772) wifi:config nano formatting: disabled
+I (6782) wifi:Init data frame dynamic rx buffer num: 8
+I (6782) wifi:Init dynamic rx mgmt buffer num: 5
+I (6792) wifi:Init management short buffer num: 32
+I (6792) wifi:Init dynamic tx buffer num: 32
+I (6802) wifi:Init static tx FG buffer num: 2
+I (6802) wifi:Init static rx buffer size: 1600
+I (6802) wifi:Init static rx buffer num: 6
+I (6812) wifi:Init dynamic rx buffer num: 8
+I (6812) wifi_init: rx ba win: 6
+I (6812) wifi_init: accept mbox: 6
+I (6822) wifi_init: tcpip mbox: 32
+I (6822) wifi_init: udp mbox: 6
+I (6822) wifi_init: tcp mbox: 6
+I (6832) wifi_init: tcp tx win: 5760
+I (6832) wifi_init: tcp rx win: 5760
+I (6832) wifi_init: tcp mss: 1440
+I (6842) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11
+I (6892) wifi:mode : sta (44:b1:76:b6:a4:50)
+I (6892) wifi:enable tsf
+W (7912) wifi:Haven't to connect to a suitable AP now!
+I (7912) network: Wait for the successful WiFi connection
+W (8912) wifi:Haven't to connect to a suitable AP now!
+I (8912) network: Wait for the successful WiFi connection
+I (9302) wifi: Found AP: Eiswein, BSSID: 50:4f:3b:1e:ce:5c, RSSI: -30, Channel: 10, Authmode: 3
+I (9312) wifi: Found AP: Eiswein, BSSID: 50:4f:3b:1e:ce:75, RSSI: -63, Channel: 10, Authmode: 3
+W (9312) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+W (9912) wifi:Haven't to connect to a suitable AP now!
+I (9912) network: Wait for the successful WiFi connection
+I (10912) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0
+I (10912) wifi:state: init -> auth (0xb0)
+I (10972) wifi:state: auth -> assoc (0x0)
+I (11032) wifi:state: assoc -> run (0x10)
+I (11072) wifi:connected with Eiswein, aid = 3, channel 10, BW20, bssid = 50:4f:3b:1e:ce:75
+I (11072) wifi:security: WPA2-PSK, phy: bgn, rssi: -64
+I (11072) wifi:pm start, type: 1
+
+I (11082) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (11092) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (11152) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (11972) network: Waiting to obtain the IP address...
+I (12972) network: Waiting to obtain the IP address...
+I (13322) wifi:<ba-add>idx:0 (ifx:0, 50:4f:3b:1e:ce:75), tid:0, ssn:0, winSize:64
+I (13972) network: Waiting to obtain the IP address...
+I (14972) network: Waiting to obtain the IP address...
+I (15242) network: Current WiFi connection information:
+I (15242) network:   SSID: Eiswein
+I (15242) network:   BSSID: 50:4f:3b:1e:ce:75
+I (15242) network:   signal strength(RSSI): -61 dBm
+I (15242) network:   (information)  channel: 10
+I (15252) network:   Encryption type(authmode): 3
+I (15252) network: The IP address has been obtained:
+I (15252) network:   IP Address: 192.168.1.6
+I (15262) network:   subnet mask: 255.255.255.0
+I (15262) network:   gateway: 192.168.1.1
+I (15272) wifi: Got IP: 192.168.1.6
+I (15272) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1
+I (16072) wifi:<ba-add>idx:1 (ifx:0, 50:4f:3b:1e:ce:75), tid:6, ssn:2, winSize:64
+I (17002) timezone: Read the time zone index from NVS: 20 (UTC+8)
+I (17002) timezone: Applied time zones: UTC+8 (CST-8)
+I (18502) clock: The NTP successfully obtained the time and wrote it to the RTC
+I (18502) clock: Prepare to write into the RTC: 2026-10-16 21:07:09
+I (19502) network: The IP address has been obtained: 192.168.1.6
+E (19502) EVEN: Restarting now.
+
+I (19512) BAT_Power: BAT_Power = 100%
+I (27732) home: EPD_Sleep
+I (69752) home: EPD_Init
+I (70802) BAT_Power: BAT_Power = 100%
+I (71442) home: EPD_Sleep

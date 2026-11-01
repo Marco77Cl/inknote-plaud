@@ -1,0 +1,1 @@
+PASS: all five selection cursors stay inside partial-refresh region; list text unchanged

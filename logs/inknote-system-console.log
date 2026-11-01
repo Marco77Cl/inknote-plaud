@@ -1,0 +1,241 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40045104
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (27) boot: compile time Dec 26 2025 09:27:20
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (33) boot.esp32s3: Boot SPI Speed : 80MHz
+I (37) boot.esp32s3: SPI Mode       : DIO
+I (41) boot.esp32s3: SPI Flash Size : 16MB
+I (45) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00f00000
+I (78) boot:  3 storage          Unknown data     01 82 00f10000 000f0000
+I (84) boot: End of partition table
+I (88) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=c244d0h (12731600) map
+I (2338) esp_image: segment 1: paddr=00c344f8 vaddr=3fc9ab00 size=05bf0h ( 23536) load
+I (2343) esp_image: segment 2: paddr=00c3a0f0 vaddr=40374000 size=05f28h ( 24360) load
+I (2349) esp_image: segment 3: paddr=00c40020 vaddr=42000020 size=f6fb0h (1011632) map
+I (2528) esp_image: segment 4: paddr=00d36fd8 vaddr=40379f28 size=10b4ch ( 68428) load
+I (2543) esp_image: segment 5: paddr=00d47b2c vaddr=50000000 size=00020h (    32) load
+I (2553) boot: Loaded app from partition at offset 0x10000
+I (2553) boot: Disabling RNG early entropy source...
+I (2563) octal_psram: vendor id    : 0x0d (AP)
+I (2564) octal_psram: dev id       : 0x02 (generation 3)
+I (2564) octal_psram: density      : 0x03 (64 Mbit)
+I (2566) octal_psram: good-die     : 0x01 (Pass)
+I (2570) octal_psram: Latency      : 0x01 (Fixed)
+I (2575) octal_psram: VCC          : 0x01 (3V)
+I (2579) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (2584) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (2589) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (2593) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (2599) octal_psram: DriveStrength: 0x00 (1/1)
+I (2603) MSPI Timing: Enter psram timing tuning
+I (2608) esp_psram: Found 8MB PSRAM device
+I (2611) esp_psram: Speed: 80MHz
+I (2614) cpu_start: Multicore app
+I (3043) esp_psram: SPI SRAM memory test OK
+I (3052) cpu_start: Pro cpu start user code
+I (3052) cpu_start: cpu freq: 160000000 Hz
+I (3052) app_init: Application information:
+I (3052) app_init: Project name:     inknote_system
+I (3053) app_init: App version:      1
+I (3053) app_init: Compile time:     Oct 17 2026 08:09:52
+I (3053) app_init: ELF file SHA256:  4e03df959...
+I (3053) app_init: ESP-IDF:          v5.5.2
+I (3053) efuse_init: Min chip rev:     v0.0
+I (3053) efuse_init: Max chip rev:     v0.99 
+I (3054) efuse_init: Chip rev:         v0.2
+I (3054) heap_init: Initializing. RAM available for dynamic allocation:
+I (3054) heap_init: At 3FCAD8D0 len 0003BE40 (239 KiB): RAM
+I (3054) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (3055) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (3055) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (3055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (3056) spi_flash: detected chip: generic
+I (3056) spi_flash: flash io: dio
+I (3057) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (3058) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (3058) main_task: Started on CPU0
+I (3068) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (3068) main_task: Calling app_main()
+E (3098) EVEN: Hello world!
+
+I (3148) _sdcard: SD card mounted at /sdcard
+Name: SN128
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 121942MB
+CSD: ver=2, sector_size=512, capacity=249737216 read_bl_len=9
+SSR: bus_width=4
+I (3148) I2C_BSP: I2C master bus initialized on port 0
+I (3198) I2C_BSP: All I2C devices initialized
+SPIFFS mounted - Total size: 875 KB used: 87 KB
+I (3408) PCF85063: The RTC initialization of PCF85063 has been completed
+I (3408) axp2101: Init PMU SUCCESS!
+I (3428) page_audio: i2s driver init success
+I (3428) ES8311: es i2c_cfg bus_handle=0x3cd37db0 addr=0x30
+I (3428) ES8311: Work in Slave mode
+I (3438) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:3
+I (3438) I2S_IF: STD Mode 1 bits:16/16 channel:2 sample_rate:16000 mask:3
+I (3448) Adev_Codec: Open codec device OK
+I (3448) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:1
+I (3458) I2S_IF: STD Mode 0 bits:16/16 channel:2 sample_rate:16000 mask:1
+I (3458) Adev_Codec: Open codec device OK
+I (3468) ES8311: ES8311 codec initialized successfully
+I (3468) page_audio: es8311 codec init success
+I (3518) page_audio: mute setting 0
+I (3518) page_audio: audio player init success
+I (3518) page_audio: Audio subsystem ready (muted, volume=0)
+E (3928) main: mode = 0
+I (3938) network: WiFi is enabled and the connection to WiFi begins
+I (6578) pp: pp rom version: e7ae62f
+I (6578) net80211: net80211 rom version: e7ae62f
+I (6588) wifi:wifi driver task: 3fcc7bd4, prio:23, stack:6656, core=0
+I (6588) wifi:wifi firmware version: ee91c8c
+I (6588) wifi:wifi certification version: v7.0
+I (6588) wifi:config NVS flash: disabled
+I (6588) wifi:config nano formatting: disabled
+I (6588) wifi:Init data frame dynamic rx buffer num: 8
+I (6588) wifi:Init dynamic rx mgmt buffer num: 5
+I (6588) wifi:Init management short buffer num: 32
+I (6588) wifi:Init dynamic tx buffer num: 32
+I (6588) wifi:Init static tx FG buffer num: 2
+I (6588) wifi:Init static rx buffer size: 1600
+I (6588) wifi:Init static rx buffer num: 6
+I (6588) wifi:Init dynamic rx buffer num: 8
+I (6588) wifi_init: rx ba win: 6
+I (6588) wifi_init: accept mbox: 6
+I (6588) wifi_init: tcpip mbox: 32
+I (6588) wifi_init: udp mbox: 6
+I (6588) wifi_init: tcp mbox: 6
+I (6588) wifi_init: tcp tx win: 5760
+I (6588) wifi_init: tcp rx win: 5760
+I (6588) wifi_init: tcp mss: 1440
+I (6588) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (6588) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration
+I (6628) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (6648) wifi:mode : sta (44:b1:76:b6:a4:50)
+I (6648) wifi:enable tsf
+W (7678) wifi:Haven't to connect to a suitable AP now!
+I (7678) network: Wait for the successful WiFi connection
+W (8678) wifi:Haven't to connect to a suitable AP now!
+I (8678) network: Wait for the successful WiFi connection
+I (9068) wifi: Found AP: Eiswein, BSSID: 50:4f:3b:1e:ce:5c, RSSI: -24, Channel: 10, Authmode: 3
+I (9068) wifi: Found AP: Eiswein, BSSID: 50:4f:3b:1e:ce:75, RSSI: -66, Channel: 10, Authmode: 3
+W (9068) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+W (9678) wifi:Haven't to connect to a suitable AP now!
+I (9678) network: Wait for the successful WiFi connection
+I (10258) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0
+I (10258) wifi:state: init -> auth (0xb0)
+I (10268) wifi:state: auth -> assoc (0x0)
+I (10288) wifi:state: assoc -> run (0x10)
+I (10318) wifi:connected with Eiswein, aid = 3, channel 10, BW20, bssid = 50:4f:3b:1e:ce:75
+I (10318) wifi:security: WPA2-PSK, phy: bgn, rssi: -66
+I (10318) wifi:pm start, type: 1
+
+I (10318) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10318) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (10458) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (11688) network: Waiting to obtain the IP address...
+I (12658) wifi:<ba-add>idx:0 (ifx:0, 50:4f:3b:1e:ce:75), tid:0, ssn:0, winSize:64
+I (12688) network: Waiting to obtain the IP address...
+I (13688) network: Waiting to obtain the IP address...
+I (13738) network: Current WiFi connection information:
+I (13738) network:   SSID: Eiswein
+I (13738) network:   BSSID: 50:4f:3b:1e:ce:75
+I (13738) network:   signal strength(RSSI): -66 dBm
+I (13738) network:   (information)  channel: 10
+I (13738) network:   Encryption type(authmode): 3
+I (13738) network: The IP address has been obtained:
+I (13738) network:   IP Address: 192.168.1.6
+I (13738) network:   subnet mask: 255.255.255.0
+I (13738) network:   gateway: 192.168.1.1
+I (13738) wifi: Got IP: 192.168.1.6
+I (13738) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1
+I (15538) wifi:<ba-add>idx:1 (ifx:0, 50:4f:3b:1e:ce:75), tid:6, ssn:2, winSize:64
+I (15708) timezone: Read the time zone index from NVS: 20 (UTC+8)
+I (15708) timezone: Applied time zones: UTC+8 (CST-8)
+I (17708) clock: The NTP successfully obtained the time and wrote it to the RTC
+I (17708) clock: Prepare to write into the RTC: 2026-10-17 08:13:43
+I (18708) network: The IP address has been obtained: 192.168.1.6
+E (18708) EVEN: Restarting now.
+
+I (18718) BAT_Power: BAT_Power = 100%
+I (33938) BAT_Power: BAT_Power = 100%
+I (82578) home: EPD_Sleep
+I (94598) home: EPD_Init
+I (95648) BAT_Power: BAT_Power = 100%
+I (96288) home: EPD_Sleep
+I (154308) home: EPD_Init
+I (155358) BAT_Power: BAT_Power = 100%
+I (155998) home: EPD_Sleep
+I (214018) home: EPD_Init
+I (215068) BAT_Power: BAT_Power = 100%
+I (215708) home: EPD_Sleep
+I (274728) home: EPD_Init
+I (275778) BAT_Power: BAT_Power = 100%
+I (276418) home: EPD_Sleep
+I (335488) BAT_Power: BAT_Power = 100%
+I (336128) home: EPD_Sleep
+I (394148) home: EPD_Init
+I (395198) BAT_Power: BAT_Power = 100%
+I (395838) home: EPD_Sleep
+I (453858) home: EPD_Init
+I (454908) BAT_Power: BAT_Power = 100%
+I (455548) home: EPD_Sleep
+I (514568) home: EPD_Init
+I (515618) BAT_Power: BAT_Power = 100%
+I (516258) home: EPD_Sleep
+I (520808) home: EPD_Init
+I (528038) BAT_Power: BAT_Power = 100%
+W (528498) EPD_PAINT: The character pattern cannot be read: ↑
+W (528498) EPD_PAINT: The character pattern cannot be read: ↓
+I (530958) num: The selected file is 
+I (530958) home: EPD_Init
+I (534378) BAT_Power: BAT_Power = 100%
+W (538228) EPD_PAINT: The character pattern cannot be read: ↑
+W (538228) EPD_PAINT: The character pattern cannot be read: ↓
+W (538628) EPD_PAINT: The character pattern cannot be read: ↑
+W (538628) EPD_PAINT: The character pattern cannot be read: ↓
+I (540458) InkNote: PAGE_ENTER
+I (540458) InkNote: PAGE_EXIT
+W (540498) EPD_PAINT: The character pattern cannot be read: ↑
+W (540498) EPD_PAINT: The character pattern cannot be read: ↓
+W (540908) EPD_PAINT: The character pattern cannot be read: ↑
+W (540908) EPD_PAINT: The character pattern cannot be read: ↓
+I (548258) InkNote: PAGE_ENTER
+I (548258) InkNote: PAGE_EXIT
+W (548308) EPD_PAINT: The character pattern cannot be read: ↑
+W (548308) EPD_PAINT: The character pattern cannot be read: ↓
+W (548718) EPD_PAINT: The character pattern cannot be read: ↑
+W (548718) EPD_PAINT: The character pattern cannot be read: ↓
+I (581438) InkNote: PAGE_ENTER
+I (581438) InkNote: PAGE_EXIT
+W (581488) EPD_PAINT: The character pattern cannot be read: ↑
+W (581488) EPD_PAINT: The character pattern cannot be read: ↓
+W (581888) EPD_PAINT: The character pattern cannot be read: ↑
+W (581898) EPD_PAINT: The character pattern cannot be read: ↓
+I (584448) InkNote: PAGE_ENTER
+I (584448) InkNote: PAGE_EXIT
+W (584498) EPD_PAINT: The character pattern cannot be read: ↑
+W (584498) EPD_PAINT: The character pattern cannot be read: ↓
+W (584898) EPD_PAINT: The character pattern cannot be read: ↑
+W (584898) EPD_PAINT: The character pattern cannot be read: ↓
+I (649108) home: EPD_Sleep
+I (650128) home: EPD_Init
+I (651828) home: EPD_Sleep

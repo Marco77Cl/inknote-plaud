@@ -1,0 +1,7 @@
+{
+  "partition_table_matches_factory": true,
+  "app_size": 422576,
+  "app_offset": "0x10000",
+  "app_sha256": "62e5458c1050dd80e6f046c07efa70441f3746c78115ed0aff4e06acada31527",
+  "fits_factory_partition": true
+}

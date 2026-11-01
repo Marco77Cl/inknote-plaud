@@ -1,0 +1,26 @@
+PASS UTF-8 import with fragmented receive
+PASS duplicate preserves progress
+PASS duplicate accepts reordered TF metadata
+PASS unauthorized
+PASS invalid id
+PASS header hash differs
+PASS computed hash differs
+PASS version
+PASS kind
+PASS empty title
+PASS missing chapters
+PASS fractional offset
+PASS offset in UTF8
+PASS unordered offsets
+PASS overlong UTF8
+PASS surrogate UTF8
+PASS unfinished UTF8
+PASS nul text
+PASS truncated payload
+PASS oversize request
+PASS undersize request
+PASS metadata bound
+PASS deep JSON nesting
+PASS cancelled
+PASS damaged duplicate preserves existing file
+All upload integration checks passed.

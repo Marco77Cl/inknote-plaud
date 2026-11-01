@@ -1,0 +1,355 @@
+{
+  "files": [
+    {
+      "file": "recordings/validation-2026-10-16/rec_00fe3621.wav",
+      "file_size_bytes": 22572,
+      "format": {
+        "compression": "NONE",
+        "channels": 1,
+        "sample_rate_hz": 16000,
+        "sample_width_bytes": 2,
+        "bits_per_sample": 16,
+        "frames_declared": 11264,
+        "data_bytes_declared": 22528
+      },
+      "read": {
+        "frames_read": 11264,
+        "data_bytes_read": 22528,
+        "leftover_bytes": 0,
+        "read_error": null
+      },
+      "duration_seconds": 0.704,
+      "duration_declared_seconds": 0.704,
+      "sample_count": 11264,
+      "zero_sample_count": 40,
+      "zero_sample_ratio": 0.0035511363636363635,
+      "peak": 1295,
+      "peak_normalized": 0.039520263671875,
+      "rms": 126.43503682497118,
+      "rms_dbfs": -48.27164991152741,
+      "silence_suspected": false,
+      "near_silence_suspected": false,
+      "mic_verified": false,
+      "checks": {
+        "pcm_uncompressed": true,
+        "sample_rate_16000": true,
+        "bits_16": true,
+        "mono": true,
+        "non_zero_frames": true,
+        "data_length_matches_header": true
+      },
+      "errors": [],
+      "warnings": [
+        "40/11264 samples (0.36%) are exactly zero"
+      ],
+      "ok": true,
+      "exit_code": 0,
+      "sha256": "b1dcffeadb7f857cce9f9254f2ae1329f735ac18f2685976f87e5d8f186bee6e",
+      "copy_verified": true,
+      "clipped_samples": 0,
+      "dc_offset": -0.5994318181818182,
+      "peak_dbfs": -28.063603330848945
+    },
+    {
+      "file": "recordings/validation-2026-10-16/rec_4460807d.wav",
+      "file_size_bytes": 10284,
+      "format": {
+        "compression": "NONE",
+        "channels": 1,
+        "sample_rate_hz": 16000,
+        "sample_width_bytes": 2,
+        "bits_per_sample": 16,
+        "frames_declared": 5120,
+        "data_bytes_declared": 10240
+      },
+      "read": {
+        "frames_read": 5120,
+        "data_bytes_read": 10240,
+        "leftover_bytes": 0,
+        "read_error": null
+      },
+      "duration_seconds": 0.32,
+      "duration_declared_seconds": 0.32,
+      "sample_count": 5120,
+      "zero_sample_count": 22,
+      "zero_sample_ratio": 0.004296875,
+      "peak": 30720,
+      "peak_normalized": 0.9375,
+      "rms": 457.5820426778678,
+      "rms_dbfs": -37.09961924533665,
+      "silence_suspected": false,
+      "near_silence_suspected": false,
+      "mic_verified": false,
+      "checks": {
+        "pcm_uncompressed": true,
+        "sample_rate_16000": true,
+        "bits_16": true,
+        "mono": true,
+        "non_zero_frames": true,
+        "data_length_matches_header": true
+      },
+      "errors": [],
+      "warnings": [
+        "22/5120 samples (0.43%) are exactly zero"
+      ],
+      "ok": true,
+      "exit_code": 0,
+      "sha256": "5286b633ec203075c3d497ac04588109c37ac686a86e05303c2d594e744c432f",
+      "copy_verified": true,
+      "clipped_samples": 0,
+      "dc_offset": -6.50078125,
+      "peak_dbfs": -0.5605744720048708
+    },
+    {
+      "file": "recordings/validation-2026-10-16/rec_6822a787.wav",
+      "file_size_bytes": 813100,
+      "format": {
+        "compression": "NONE",
+        "channels": 1,
+        "sample_rate_hz": 16000,
+        "sample_width_bytes": 2,
+        "bits_per_sample": 16,
+        "frames_declared": 406528,
+        "data_bytes_declared": 813056
+      },
+      "read": {
+        "frames_read": 406528,
+        "data_bytes_read": 813056,
+        "leftover_bytes": 0,
+        "read_error": null
+      },
+      "duration_seconds": 25.408,
+      "duration_declared_seconds": 25.408,
+      "sample_count": 406528,
+      "zero_sample_count": 2754,
+      "zero_sample_ratio": 0.006774441120906801,
+      "peak": 23910,
+      "peak_normalized": 0.72967529296875,
+      "rms": 1527.5884539964736,
+      "rms_dbfs": -26.628871355660632,
+      "silence_suspected": false,
+      "near_silence_suspected": false,
+      "mic_verified": false,
+      "checks": {
+        "pcm_uncompressed": true,
+        "sample_rate_16000": true,
+        "bits_16": true,
+        "mono": true,
+        "non_zero_frames": true,
+        "data_length_matches_header": true
+      },
+      "errors": [],
+      "warnings": [
+        "2754/406528 samples (0.68%) are exactly zero"
+      ],
+      "ok": true,
+      "exit_code": 0,
+      "sha256": "cd39b3b0f2df2d8c542414713dad2e0d30400e3ffe87ec650d14272d91534264",
+      "copy_verified": true,
+      "clipped_samples": 0,
+      "dc_offset": -0.2723010469143577,
+      "peak_dbfs": -2.737407176878863
+    },
+    {
+      "file": "recordings/validation-2026-10-16/rec_7843765c.wav",
+      "file_size_bytes": 18476,
+      "format": {
+        "compression": "NONE",
+        "channels": 1,
+        "sample_rate_hz": 16000,
+        "sample_width_bytes": 2,
+        "bits_per_sample": 16,
+        "frames_declared": 9216,
+        "data_bytes_declared": 18432
+      },
+      "read": {
+        "frames_read": 9216,
+        "data_bytes_read": 18432,
+        "leftover_bytes": 0,
+        "read_error": null
+      },
+      "duration_seconds": 0.576,
+      "duration_declared_seconds": 0.576,
+      "sample_count": 9216,
+      "zero_sample_count": 44,
+      "zero_sample_ratio": 0.004774305555555556,
+      "peak": 725,
+      "peak_normalized": 0.022125244140625,
+      "rms": 93.60034641009763,
+      "rms_dbfs": -50.883449578339196,
+      "silence_suspected": false,
+      "near_silence_suspected": false,
+      "mic_verified": false,
+      "checks": {
+        "pcm_uncompressed": true,
+        "sample_rate_16000": true,
+        "bits_16": true,
+        "mono": true,
+        "non_zero_frames": true,
+        "data_length_matches_header": true
+      },
+      "errors": [],
+      "warnings": [
+        "44/9216 samples (0.48%) are exactly zero"
+      ],
+      "ok": true,
+      "exit_code": 0,
+      "sha256": "b7c9f02b395439129f8d8c4add0e21b1fc62ff6acc78b7e30f26d5e991105889",
+      "copy_verified": true,
+      "clipped_samples": 0,
+      "dc_offset": 3.4282769097222223,
+      "peak_dbfs": -33.102238567774485
+    },
+    {
+      "file": "recordings/validation-2026-10-16/rec_87a39abd.wav",
+      "file_size_bytes": 481324,
+      "format": {
+        "compression": "NONE",
+        "channels": 1,
+        "sample_rate_hz": 16000,
+        "sample_width_bytes": 2,
+        "bits_per_sample": 16,
+        "frames_declared": 240640,
+        "data_bytes_declared": 481280
+      },
+      "read": {
+        "frames_read": 240640,
+        "data_bytes_read": 481280,
+        "leftover_bytes": 0,
+        "read_error": null
+      },
+      "duration_seconds": 15.04,
+      "duration_declared_seconds": 15.04,
+      "sample_count": 240640,
+      "zero_sample_count": 938,
+      "zero_sample_ratio": 0.0038979388297872342,
+      "peak": 11467,
+      "peak_normalized": 0.349945068359375,
+      "rms": 1036.6214505580044,
+      "rms_dbfs": -29.99659487224221,
+      "silence_suspected": false,
+      "near_silence_suspected": false,
+      "mic_verified": false,
+      "checks": {
+        "pcm_uncompressed": true,
+        "sample_rate_16000": true,
+        "bits_16": true,
+        "mono": true,
+        "non_zero_frames": true,
+        "data_length_matches_header": true
+      },
+      "errors": [],
+      "warnings": [
+        "938/240640 samples (0.39%) are exactly zero"
+      ],
+      "ok": true,
+      "exit_code": 0,
+      "sha256": "98fed487a37a540309b17b6345bfec41a6140f93b344152fc17b97ceb9fc7cd6",
+      "copy_verified": true,
+      "clipped_samples": 0,
+      "dc_offset": -0.3538896276595745,
+      "peak_dbfs": -9.120002449035141
+    },
+    {
+      "file": "recordings/validation-2026-10-16/rec_d18ddd87.wav",
+      "file_size_bytes": 235564,
+      "format": {
+        "compression": "NONE",
+        "channels": 1,
+        "sample_rate_hz": 16000,
+        "sample_width_bytes": 2,
+        "bits_per_sample": 16,
+        "frames_declared": 117760,
+        "data_bytes_declared": 235520
+      },
+      "read": {
+        "frames_read": 117760,
+        "data_bytes_read": 235520,
+        "leftover_bytes": 0,
+        "read_error": null
+      },
+      "duration_seconds": 7.36,
+      "duration_declared_seconds": 7.36,
+      "sample_count": 117760,
+      "zero_sample_count": 710,
+      "zero_sample_ratio": 0.006029211956521739,
+      "peak": 7335,
+      "peak_normalized": 0.223846435546875,
+      "rms": 108.9070248241416,
+      "rms_dbfs": -49.567880820522426,
+      "silence_suspected": false,
+      "near_silence_suspected": false,
+      "mic_verified": false,
+      "checks": {
+        "pcm_uncompressed": true,
+        "sample_rate_16000": true,
+        "bits_16": true,
+        "mono": true,
+        "non_zero_frames": true,
+        "data_length_matches_header": true
+      },
+      "errors": [],
+      "warnings": [
+        "710/117760 samples (0.60%) are exactly zero"
+      ],
+      "ok": true,
+      "exit_code": 0,
+      "sha256": "b2bc71950666b9d434ec0c774f004aab631536357a09f56cb2822e0da999db58",
+      "copy_verified": true,
+      "clipped_samples": 0,
+      "dc_offset": -0.6708474864130435,
+      "peak_dbfs": -13.000996335608328
+    },
+    {
+      "file": "recordings/validation-2026-10-16/rec_e20fae8b.wav",
+      "file_size_bytes": 26668,
+      "format": {
+        "compression": "NONE",
+        "channels": 1,
+        "sample_rate_hz": 16000,
+        "sample_width_bytes": 2,
+        "bits_per_sample": 16,
+        "frames_declared": 13312,
+        "data_bytes_declared": 26624
+      },
+      "read": {
+        "frames_read": 13312,
+        "data_bytes_read": 26624,
+        "leftover_bytes": 0,
+        "read_error": null
+      },
+      "duration_seconds": 0.832,
+      "duration_declared_seconds": 0.832,
+      "sample_count": 13312,
+      "zero_sample_count": 155,
+      "zero_sample_ratio": 0.011643629807692308,
+      "peak": 8192,
+      "peak_normalized": 0.25,
+      "rms": 86.87960263817571,
+      "rms_dbfs": -51.53064218092007,
+      "silence_suspected": false,
+      "near_silence_suspected": false,
+      "mic_verified": false,
+      "checks": {
+        "pcm_uncompressed": true,
+        "sample_rate_16000": true,
+        "bits_16": true,
+        "mono": true,
+        "non_zero_frames": true,
+        "data_length_matches_header": true
+      },
+      "errors": [],
+      "warnings": [
+        "155/13312 samples (1.16%) are exactly zero"
+      ],
+      "ok": true,
+      "exit_code": 0,
+      "sha256": "6321411ac1e02b269ea23bae8e2605a084b76d7c3e548f8378d66c1a1e8088c0",
+      "copy_verified": true,
+      "clipped_samples": 0,
+      "dc_offset": -1.9514723557692308,
+      "peak_dbfs": -12.041199826559248
+    }
+  ],
+  "unfinished_files": []
+}

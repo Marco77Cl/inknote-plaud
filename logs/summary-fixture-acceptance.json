@@ -1,0 +1,6 @@
+{
+  "decision_present": true,
+  "action_owner_deadline_preserved": true,
+  "all_references_valid": true,
+  "model": "Qwen2.5-7B-Instruct Q4_K_M"
+}

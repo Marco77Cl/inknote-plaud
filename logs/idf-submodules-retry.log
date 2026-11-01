@@ -1,0 +1,21 @@
+From https://github.com/espressif/mbedtls
+ * branch            ffb280bb63c78bfec1e1ab55040671768c85c923 -> FETCH_HEAD
+Submodule path 'components/mbedtls/mbedtls': checked out 'ffb280bb63c78bfec1e1ab55040671768c85c923'
+From https://github.com/espressif/esp-mqtt
+ * branch            6af4446a48ea7fa54948edc4e62277ed70abb6e1 -> FETCH_HEAD
+Submodule path 'components/mqtt/esp-mqtt': checked out '6af4446a48ea7fa54948edc4e62277ed70abb6e1'
+From https://github.com/espressif/esp-thread-lib
+ * branch            e9980c56558876ae1102be8ae9dc70821aded72c -> FETCH_HEAD
+Submodule path 'components/openthread/lib': checked out 'e9980c56558876ae1102be8ae9dc70821aded72c'
+From https://github.com/espressif/openthread
+ * branch            36b14d3ef74f5e37e5be8902e1c1955a642fdfbf -> FETCH_HEAD
+Submodule path 'components/openthread/openthread': checked out '36b14d3ef74f5e37e5be8902e1c1955a642fdfbf'
+From https://github.com/protobuf-c/protobuf-c
+ * branch            abc67a11c6db271bedbb9f58be85d6f4e2ea8389 -> FETCH_HEAD
+Submodule path 'components/protobuf-c/protobuf-c': checked out 'abc67a11c6db271bedbb9f58be85d6f4e2ea8389'
+From https://github.com/pellepl/spiffs
+ * branch            0dbb3f71c5f6fae3747a9d935372773762baf852 -> FETCH_HEAD
+Submodule path 'components/spiffs/spiffs': checked out '0dbb3f71c5f6fae3747a9d935372773762baf852'
+From https://github.com/ThrowTheSwitch/Unity
+ * branch            bf560290f6020737eafaa8b5cbd2177c3956c03f -> FETCH_HEAD
+Submodule path 'components/unity/unity': checked out 'bf560290f6020737eafaa8b5cbd2177c3956c03f'

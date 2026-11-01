@@ -1,0 +1,607 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f59
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+I (26) boot: ESP-IDF v5.4.1 2nd stage bootloader
+I (27) boot: compile time Dec 26 2025 09:27:20
+I (27) boot: Multicore bootloader
+I (27) boot: chip revision: v0.2
+I (30) boot: efuse block revision: v1.4
+I (33) boot.esp32s3: Boot SPI Speed : 80MHz
+I (37) boot.esp32s3: SPI Mode       : DIO
+I (41) boot.esp32s3: SPI Flash Size : 16MB
+I (45) boot: Enabling RNG early entropy source...
+I (49) boot: Partition Table:
+I (52) boot: ## Label            Usage          Type ST Offset   Length
+I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (71) boot:  2 factory          factory app      00 00 00010000 00f00000
+I (78) boot:  3 storage          Unknown data     01 82 00f10000 000f0000
+I (84) boot: End of partition table
+I (88) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=c24608h (12731912) map
+I (2338) esp_image: segment 1: paddr=00c34630 vaddr=3fc9ab00 size=05bf0h ( 23536) load
+I (2343) esp_image: segment 2: paddr=00c3a228 vaddr=40374000 size=05df0h ( 24048) load
+I (2349) esp_image: segment 3: paddr=00c40020 vaddr=42000020 size=f70b4h (1011892) map
+I (2528) esp_image: segment 4: paddr=00d370dc vaddr=40379df0 size=10ccch ( 68812) load
+I (2544) esp_image: segment 5: paddr=00d47db0 vaddr=50000000 size=00020h (    32) load
+I (2553) boot: Loaded app from partition at offset 0x10000
+I (2553) boot: Disabling RNG early entropy source...
+I (2564) octal_psram: vendor id    : 0x0d (AP)
+I (2564) octal_psram: dev id       : 0x02 (generation 3)
+I (2564) octal_psram: density      : 0x03 (64 Mbit)
+I (2566) octal_psram: good-die     : 0x01 (Pass)
+I (2571) octal_psram: Latency      : 0x01 (Fixed)
+I (2575) octal_psram: VCC          : 0x01 (3V)
+I (2579) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (2584) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (2589) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (2594) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (2599) octal_psram: DriveStrength: 0x00 (1/1)
+I (2603) MSPI Timing: Enter psram timing tuning
+I (2608) esp_psram: Found 8MB PSRAM device
+I (2611) esp_psram: Speed: 80MHz
+I (2614) cpu_start: Multicore app
+I (3043) esp_psram: SPI SRAM memory test OK
+I (3052) cpu_start: Pro cpu start user code
+I (3052) cpu_start: cpu freq: 160000000 Hz
+I (3053) app_init: Application information:
+I (3053) app_init: Project name:     inknote_system
+I (3053) app_init: App version:      1
+I (3053) app_init: Compile time:     Oct 17 2026 08:09:52
+I (3053) app_init: ELF file SHA256:  17e3dc3c1...
+I (3053) app_init: ESP-IDF:          v5.5.2
+I (3053) efuse_init: Min chip rev:     v0.0
+I (3054) efuse_init: Max chip rev:     v0.99 
+I (3054) efuse_init: Chip rev:         v0.2
+I (3054) heap_init: Initializing. RAM available for dynamic allocation:
+I (3054) heap_init: At 3FCAD8F8 len 0003BE18 (239 KiB): RAM
+I (3054) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (3055) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (3055) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (3055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (3056) spi_flash: detected chip: generic
+I (3056) spi_flash: flash io: dio
+I (3057) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (3058) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (3059) main_task: Started on CPU0
+I (3069) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (3069) main_task: Calling app_main()
+E (3099) EVEN: Hello world!
+
+I (3149) _sdcard: SD card mounted at /sdcard
+Name: SN128
+Type: SDHC
+Speed: 40.00 MHz (limit: 40.00 MHz)
+Size: 121942MB
+CSD: ver=2, sector_size=512, capacity=249737216 read_bl_len=9
+SSR: bus_width=4
+I (3149) I2C_BSP: I2C master bus initialized on port 0
+I (3199) I2C_BSP: All I2C devices initialized
+SPIFFS mounted - Total size: 875 KB used: 87 KB
+I (3309) PCF85063: The RTC initialization of PCF85063 has been completed
+I (3309) axp2101: Init PMU SUCCESS!
+I (3329) page_audio: i2s driver init success
+I (3329) ES8311: es i2c_cfg bus_handle=0x3cd37db0 addr=0x30
+I (3329) ES8311: Work in Slave mode
+I (3339) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:3
+I (3339) I2S_IF: STD Mode 1 bits:16/16 channel:2 sample_rate:16000 mask:3
+I (3349) Adev_Codec: Open codec device OK
+I (3349) I2S_IF: channel mode 0 bits:16/16 channel:2 mask:1
+I (3359) I2S_IF: STD Mode 0 bits:16/16 channel:2 sample_rate:16000 mask:1
+I (3359) Adev_Codec: Open codec device OK
+I (3369) ES8311: ES8311 codec initialized successfully
+I (3369) page_audio: es8311 codec init success
+I (3419) page_audio: mute setting 0
+I (3419) page_audio: audio player init success
+I (3419) page_audio: Audio subsystem ready (muted, volume=0)
+E (3829) main: mode = 0
+I (3839) network: WiFi is enabled and the connection to WiFi begins
+I (6479) pp: pp rom version: e7ae62f
+I (6479) net80211: net80211 rom version: e7ae62f
+I (6489) wifi:wifi driver task: 3fcc7c70, prio:23, stack:6656, core=0
+I (6489) wifi:wifi firmware version: ee91c8c
+I (6489) wifi:wifi certification version: v7.0
+I (6489) wifi:config NVS flash: disabled
+I (6489) wifi:config nano formatting: disabled
+I (6489) wifi:Init data frame dynamic rx buffer num: 8
+I (6489) wifi:Init dynamic rx mgmt buffer num: 5
+I (6489) wifi:Init management short buffer num: 32
+I (6489) wifi:Init dynamic tx buffer num: 32
+I (6489) wifi:Init static tx FG buffer num: 2
+I (6489) wifi:Init static rx buffer size: 1600
+I (6489) wifi:Init static rx buffer num: 6
+I (6489) wifi:Init dynamic rx buffer num: 8
+I (6489) wifi_init: rx ba win: 6
+I (6489) wifi_init: accept mbox: 6
+I (6489) wifi_init: tcpip mbox: 32
+I (6489) wifi_init: udp mbox: 6
+I (6489) wifi_init: tcp mbox: 6
+I (6489) wifi_init: tcp tx win: 5760
+I (6489) wifi_init: tcp rx win: 5760
+I (6489) wifi_init: tcp mss: 1440
+I (6489) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (6529) wifi:mode : sta (44:b1:76:b6:a4:50)
+I (6529) wifi:enable tsf
+W (7549) wifi:Haven't to connect to a suitable AP now!
+I (7549) network: Wait for the successful WiFi connection
+W (8549) wifi:Haven't to connect to a suitable AP now!
+I (8549) network: Wait for the successful WiFi connection
+I (8949) wifi: Found AP: Eiswein, BSSID: 50:4f:3b:1e:ce:5c, RSSI: -35, Channel: 10, Authmode: 3
+I (8949) wifi: Found AP: Eiswein, BSSID: 50:4f:3b:1e:ce:75, RSSI: -60, Channel: 10, Authmode: 3
+W (8949) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+W (9549) wifi:Haven't to connect to a suitable AP now!
+I (9549) network: Wait for the successful WiFi connection
+I (10139) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0
+I (10139) wifi:state: init -> auth (0xb0)
+I (10159) wifi:state: auth -> assoc (0x0)
+I (10189) wifi:state: assoc -> run (0x10)
+I (10259) wifi:connected with Eiswein, aid = 3, channel 10, BW20, bssid = 50:4f:3b:1e:ce:75
+I (10259) wifi:security: WPA2-PSK, phy: bgn, rssi: -60
+I (10259) wifi:pm start, type: 1
+
+I (10259) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10259) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (10299) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (11569) network: Waiting to obtain the IP address...
+I (12359) wifi:<ba-add>idx:0 (ifx:0, 50:4f:3b:1e:ce:75), tid:0, ssn:0, winSize:64
+I (12569) network: Waiting to obtain the IP address...
+I (13529) network: Current WiFi connection information:
+I (13529) network:   SSID: Eiswein
+I (13529) network:   BSSID: 50:4f:3b:1e:ce:75
+I (13529) network:   signal strength(RSSI): -63 dBm
+I (13529) network:   (information)  channel: 10
+I (13529) network:   Encryption type(authmode): 3
+I (13529) network: The IP address has been obtained:
+I (13529) network:   IP Address: 192.168.1.6
+I (13529) network:   subnet mask: 255.255.255.0
+I (13529) network:   gateway: 192.168.1.1
+I (13529) wifi: Got IP: 192.168.1.6
+I (13529) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1
+I (14589) timezone: Read the time zone index from NVS: 20 (UTC+8)
+I (14589) timezone: Applied time zones: UTC+8 (CST-8)
+I (14589) clock: The NTP successfully obtained the time and wrote it to the RTC
+I (14589) clock: Prepare to write into the RTC: 2026-10-17 08:26:28
+I (15589) network: The IP address has been obtained: 192.168.1.6
+E (15589) EVEN: Restarting now.
+
+I (15599) BAT_Power: BAT_Power = 100%
+I (17379) wifi:<ba-add>idx:1 (ifx:0, 50:4f:3b:1e:ce:75), tid:6, ssn:2, winSize:64
+W (46319) EPD_PAINT: The character pattern cannot be read: ↑
+W (46319) EPD_PAINT: The character pattern cannot be read: ↓
+W (46729) EPD_PAINT: The character pattern cannot be read: ↑
+W (46729) EPD_PAINT: The character pattern cannot be read: ↓
+I (48179) InkNote: PAGE_ENTER internal_largest=45056 psram_free=8257732
+I (48189) InkNote: PAGE_RESOURCES_OK ring_bytes=131072 in PSRAM
+I (48189) InkNote: Audio configured: 16000 Hz PCM16 mono LEFT, gain=30 dB
+I (48189) InkNote: STATE=READY file= bytes=0 Ready
+I (51319) InkNote: DISPLAY=READY seconds=0
+I (51829) InkNote: STATE=RECORDING file=rec_98b88f3f.wav bytes=0 Press dial or BOOT to stop
+I (54609) InkNote: DISPLAY=RECORDING seconds=0
+I (55389) InkNote: DISPLAY=RECORDING seconds=2
+I (56169) InkNote: DISPLAY=RECORDING seconds=3
+I (56939) InkNote: DISPLAY=RECORDING seconds=4
+I (57719) InkNote: DISPLAY=RECORDING seconds=5
+I (58599) InkNote: DISPLAY=RECORDING seconds=6
+I (59629) InkNote: DISPLAY=RECORDING seconds=7
+I (59899) InkNote: STATE=SAVING file=rec_98b88f3f.wav bytes=258048 Finalizing WAV; keep power on
+I (59929) InkNote: RESULT ok=1 bytes=258048 seconds=8.064 peak=5776 rms=118.37 clipped=0 gain=30
+I (59929) InkNote: STATE=COMPLETE file=rec_98b88f3f.wav bytes=258048 Saved. Press dial for next note
+I (60599) InkNote: DISPLAY=RECORDING seconds=8
+I (63779) InkNote: DISPLAY=SAVING seconds=8
+I (66959) InkNote: DISPLAY=COMPLETE seconds=8
+E (71539) i2s_common: i2s_channel_disable(1217): the channel has not been enabled yet
+I (71539) InkNote: PAGE_EXIT
+W (71579) EPD_PAINT: The character pattern cannot be read: ↑
+W (71589) EPD_PAINT: The character pattern cannot be read: ↓
+W (71979) EPD_PAINT: The character pattern cannot be read: ↑
+W (71979) EPD_PAINT: The character pattern cannot be read: ↓
+I (75329) BAT_Power: BAT_Power = 100%
+I (76059) BAT_Power: BAT_Power = 100%
+I (97669) timezone: Read the time zone index from NVS: 20 (UTC+8)
+I (97669) timezone: Applied time zones: UTC+8 (CST-8)
+I (97679) BAT_Power: BAT_Power = 100%
+I (97719) clock: current time: 2026-10-17 08:27:51 week: 6
+I (97729) lunar: lunar = /sdcard/lunar/2026-10.json
+I (97729) lunar: file_exist = 0
+I (97729) lunar: The lunar calendar data is being obtained and saved through the network connection...
+I (102379) lunar: HTTP content length: 413
+I (102379) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-1","lunarDate":"2026-8-21","festival":"国庆节","lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":21,"Animal":"马","IMonthCn":"八月","IDayCn":"廿一","cYear":2026,"cMonth":10,"cDay":1,"gzYear":"丙午","gzMonth":"丁酉","gzDay":"戊申","isToday":false,"isLeap":false,"nWeek":4,"ncWeek":"星期四","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (106389) lunar: HTTP content length: 406
+I (106389) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-2","lunarDate":"2026-8-22","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":22,"Animal":"马","IMonthCn":"八月","IDayCn":"廿二","cYear":2026,"cMonth":10,"cDay":2,"gzYear":"丙午","gzMonth":"丁酉","gzDay":"己酉","isToday":false,"isLeap":false,"nWeek":5,"ncWeek":"星期五","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (109929) lunar: HTTP content length: 406
+I (109929) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-3","lunarDate":"2026-8-23","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":23,"Animal":"马","IMonthCn":"八月","IDayCn":"廿三","cYear":2026,"cMonth":10,"cDay":3,"gzYear":"丙午","gzMonth":"丁酉","gzDay":"庚戌","isToday":false,"isLeap":false,"nWeek":6,"ncWeek":"星期六","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (113529) lunar: HTTP content length: 406
+I (113529) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-4","lunarDate":"2026-8-24","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":24,"Animal":"马","IMonthCn":"八月","IDayCn":"廿四","cYear":2026,"cMonth":10,"cDay":4,"gzYear":"丙午","gzMonth":"丁酉","gzDay":"辛亥","isToday":false,"isLeap":false,"nWeek":7,"ncWeek":"星期日","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (117389) lunar: HTTP content length: 406
+I (117399) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-5","lunarDate":"2026-8-25","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":25,"Animal":"马","IMonthCn":"八月","IDayCn":"廿五","cYear":2026,"cMonth":10,"cDay":5,"gzYear":"丙午","gzMonth":"丁酉","gzDay":"壬子","isToday":false,"isLeap":false,"nWeek":1,"ncWeek":"星期一","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (122199) lunar: HTTP content length: 406
+I (122199) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-6","lunarDate":"2026-8-26","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":26,"Animal":"马","IMonthCn":"八月","IDayCn":"廿六","cYear":2026,"cMonth":10,"cDay":6,"gzYear":"丙午","gzMonth":"丁酉","gzDay":"癸丑","isToday":false,"isLeap":false,"nWeek":2,"ncWeek":"星期二","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (125729) lunar: HTTP content length: 406
+I (125729) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-7","lunarDate":"2026-8-27","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":27,"Animal":"马","IMonthCn":"八月","IDayCn":"廿七","cYear":2026,"cMonth":10,"cDay":7,"gzYear":"丙午","gzMonth":"丁酉","gzDay":"甲寅","isToday":false,"isLeap":false,"nWeek":3,"ncWeek":"星期三","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (129509) lunar: HTTP content length: 409
+I (129509) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-8","lunarDate":"2026-8-28","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":28,"Animal":"马","IMonthCn":"八月","IDayCn":"廿八","cYear":2026,"cMonth":10,"cDay":8,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"乙卯","isToday":false,"isLeap":false,"nWeek":4,"ncWeek":"星期四","isTerm":true,"Term":"寒露","astro":"天秤座"}}
+I (132949) lunar: HTTP content length: 406
+I (132949) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-9","lunarDate":"2026-8-29","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":8,"lDay":29,"Animal":"马","IMonthCn":"八月","IDayCn":"廿九","cYear":2026,"cMonth":10,"cDay":9,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"丙辰","isToday":false,"isLeap":false,"nWeek":5,"ncWeek":"星期五","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (136929) lunar: HTTP content length: 406
+I (136929) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-10","lunarDate":"2026-9-1","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":1,"Animal":"马","IMonthCn":"九月","IDayCn":"初一","cYear":2026,"cMonth":10,"cDay":10,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"丁巳","isToday":false,"isLeap":false,"nWeek":6,"ncWeek":"星期六","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (140669) lunar: HTTP content length: 406
+I (140669) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-11","lunarDate":"2026-9-2","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":2,"Animal":"马","IMonthCn":"九月","IDayCn":"初二","cYear":2026,"cMonth":10,"cDay":11,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"戊午","isToday":false,"isLeap":false,"nWeek":7,"ncWeek":"星期日","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (144459) lunar: HTTP content length: 406
+I (144459) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-12","lunarDate":"2026-9-3","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":3,"Animal":"马","IMonthCn":"九月","IDayCn":"初三","cYear":2026,"cMonth":10,"cDay":12,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"己未","isToday":false,"isLeap":false,"nWeek":1,"ncWeek":"星期一","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (148249) lunar: HTTP content length: 406
+I (148249) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-13","lunarDate":"2026-9-4","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":4,"Animal":"马","IMonthCn":"九月","IDayCn":"初四","cYear":2026,"cMonth":10,"cDay":13,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"庚申","isToday":false,"isLeap":false,"nWeek":2,"ncWeek":"星期二","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (151769) lunar: HTTP content length: 406
+I (151769) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-14","lunarDate":"2026-9-5","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":5,"Animal":"马","IMonthCn":"九月","IDayCn":"初五","cYear":2026,"cMonth":10,"cDay":14,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"辛酉","isToday":false,"isLeap":false,"nWeek":3,"ncWeek":"星期三","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (155619) lunar: HTTP content length: 406
+I (155619) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-15","lunarDate":"2026-9-6","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":6,"Animal":"马","IMonthCn":"九月","IDayCn":"初六","cYear":2026,"cMonth":10,"cDay":15,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"壬戌","isToday":false,"isLeap":false,"nWeek":4,"ncWeek":"星期四","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (159449) lunar: HTTP content length: 406
+I (159449) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-16","lunarDate":"2026-9-7","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":7,"Animal":"马","IMonthCn":"九月","IDayCn":"初七","cYear":2026,"cMonth":10,"cDay":16,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"癸亥","isToday":false,"isLeap":false,"nWeek":5,"ncWeek":"星期五","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (163099) lunar: HTTP content length: 405
+I (163099) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-17","lunarDate":"2026-9-8","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":8,"Animal":"马","IMonthCn":"九月","IDayCn":"初八","cYear":2026,"cMonth":10,"cDay":17,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"甲子","isToday":true,"isLeap":false,"nWeek":6,"ncWeek":"星期六","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (166679) lunar: HTTP content length: 413
+I (166679) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-18","lunarDate":"2026-9-9","festival":null,"lunarFestival":"重阳节","lYear":2026,"lMonth":9,"lDay":9,"Animal":"马","IMonthCn":"九月","IDayCn":"初九","cYear":2026,"cMonth":10,"cDay":18,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"乙丑","isToday":false,"isLeap":false,"nWeek":7,"ncWeek":"星期日","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (170579) lunar: HTTP content length: 408
+I (170579) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-19","lunarDate":"2026-9-10","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":10,"Animal":"马","IMonthCn":"九月","IDayCn":"初十","cYear":2026,"cMonth":10,"cDay":19,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"丙寅","isToday":false,"isLeap":false,"nWeek":1,"ncWeek":"星期一","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (174379) lunar: HTTP content length: 408
+I (174379) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-20","lunarDate":"2026-9-11","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":11,"Animal":"马","IMonthCn":"九月","IDayCn":"十一","cYear":2026,"cMonth":10,"cDay":20,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"丁卯","isToday":false,"isLeap":false,"nWeek":2,"ncWeek":"星期二","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (178059) lunar: HTTP content length: 408
+I (178059) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-21","lunarDate":"2026-9-12","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":12,"Animal":"马","IMonthCn":"九月","IDayCn":"十二","cYear":2026,"cMonth":10,"cDay":21,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"戊辰","isToday":false,"isLeap":false,"nWeek":3,"ncWeek":"星期三","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (181869) lunar: HTTP content length: 408
+I (181869) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-22","lunarDate":"2026-9-13","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":13,"Animal":"马","IMonthCn":"九月","IDayCn":"十三","cYear":2026,"cMonth":10,"cDay":22,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"己巳","isToday":false,"isLeap":false,"nWeek":4,"ncWeek":"星期四","isTerm":false,"Term":null,"astro":"天秤座"}}
+I (185419) lunar: HTTP content length: 411
+I (185419) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-23","lunarDate":"2026-9-14","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":14,"Animal":"马","IMonthCn":"九月","IDayCn":"十四","cYear":2026,"cMonth":10,"cDay":23,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"庚午","isToday":false,"isLeap":false,"nWeek":5,"ncWeek":"星期五","isTerm":true,"Term":"霜降","astro":"天蝎座"}}
+I (188989) lunar: HTTP content length: 408
+I (188989) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-24","lunarDate":"2026-9-15","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":15,"Animal":"马","IMonthCn":"九月","IDayCn":"十五","cYear":2026,"cMonth":10,"cDay":24,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"辛未","isToday":false,"isLeap":false,"nWeek":6,"ncWeek":"星期六","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (192739) lunar: HTTP content length: 408
+I (192739) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-25","lunarDate":"2026-9-16","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":16,"Animal":"马","IMonthCn":"九月","IDayCn":"十六","cYear":2026,"cMonth":10,"cDay":25,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"壬申","isToday":false,"isLeap":false,"nWeek":7,"ncWeek":"星期日","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (196579) lunar: HTTP content length: 408
+I (196579) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-26","lunarDate":"2026-9-17","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":17,"Animal":"马","IMonthCn":"九月","IDayCn":"十七","cYear":2026,"cMonth":10,"cDay":26,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"癸酉","isToday":false,"isLeap":false,"nWeek":1,"ncWeek":"星期一","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (200269) lunar: HTTP content length: 408
+I (200269) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-27","lunarDate":"2026-9-18","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":18,"Animal":"马","IMonthCn":"九月","IDayCn":"十八","cYear":2026,"cMonth":10,"cDay":27,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"甲戌","isToday":false,"isLeap":false,"nWeek":2,"ncWeek":"星期二","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (203809) lunar: HTTP content length: 408
+I (203809) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-28","lunarDate":"2026-9-19","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":19,"Animal":"马","IMonthCn":"九月","IDayCn":"十九","cYear":2026,"cMonth":10,"cDay":28,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"乙亥","isToday":false,"isLeap":false,"nWeek":3,"ncWeek":"星期三","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (207549) lunar: HTTP content length: 408
+I (207549) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-29","lunarDate":"2026-9-20","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":20,"Animal":"马","IMonthCn":"九月","IDayCn":"二十","cYear":2026,"cMonth":10,"cDay":29,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"丙子","isToday":false,"isLeap":false,"nWeek":4,"ncWeek":"星期四","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (211239) lunar: HTTP content length: 408
+I (211249) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-30","lunarDate":"2026-9-21","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":21,"Animal":"马","IMonthCn":"九月","IDayCn":"廿一","cYear":2026,"cMonth":10,"cDay":30,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"丁丑","isToday":false,"isLeap":false,"nWeek":5,"ncWeek":"星期五","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (214879) lunar: HTTP content length: 408
+I (214879) lunar: HTTP body: {"code":200,"msg":"获取成功","data":{"date":"2026-10-31","lunarDate":"2026-9-22","festival":null,"lunarFestival":null,"lYear":2026,"lMonth":9,"lDay":22,"Animal":"马","IMonthCn":"九月","IDayCn":"廿二","cYear":2026,"cMonth":10,"cDay":31,"gzYear":"丙午","gzMonth":"戊戌","gzDay":"戊寅","isToday":false,"isLeap":false,"nWeek":6,"ncWeek":"星期六","isTerm":false,"Term":null,"astro":"天蝎座"}}
+I (214999) lunar: Lunar calendar saved to SD card: /sdcard/lunar/2026-10.json
+I (215359) lunar: The local lunar data file has been found: /sdcard/lunar/2026-10.json
+I (215389) lunar: Chinese calendar: 2026-9-8 丙午九月初八 festival:  solar terms:  week: 星期六
+I (215389) lunar: month start weekday index = 4
+I (215429) clock: EPD_Init
+I (217979) clock: EPD_Sleep
+I (217999) clock: current time: 2026-10-17 08:29:51 week 六
+I (217999) clock: current time: 2026-10-17 08:29:51 week 六
+I (218999) clock: current time: 2026-10-17 08:29:52 week 六
+I (219999) clock: current time: 2026-10-17 08:29:53 week 六
+I (220999) clock: current time: 2026-10-17 08:29:54 week 六
+I (221999) clock: current time: 2026-10-17 08:29:55 week 六
+I (222999) clock: current time: 2026-10-17 08:29:56 week 六
+I (223999) clock: current time: 2026-10-17 08:29:57 week 六
+I (224999) clock: current time: 2026-10-17 08:29:58 week 六
+I (225999) clock: current time: 2026-10-17 08:29:59 week 六
+I (226999) clock: current time: 2026-10-17 08:30:00 week 六
+I (227999) clock: current time: 2026-10-17 08:30:01 week 六
+I (228999) clock: current time: 2026-10-17 08:30:02 week 六
+I (229999) clock: current time: 2026-10-17 08:30:03 week 六
+I (230999) clock: current time: 2026-10-17 08:30:04 week 六
+I (231999) clock: current time: 2026-10-17 08:30:05 week 六
+I (232999) clock: current time: 2026-10-17 08:30:06 week 六
+I (233999) clock: current time: 2026-10-17 08:30:07 week 六
+I (234999) clock: current time: 2026-10-17 08:30:08 week 六
+I (235999) clock: current time: 2026-10-17 08:30:09 week 六
+I (236999) clock: current time: 2026-10-17 08:30:10 week 六
+I (237999) clock: current time: 2026-10-17 08:30:11 week 六
+I (238999) clock: current time: 2026-10-17 08:30:12 week 六
+I (239999) clock: current time: 2026-10-17 08:30:13 week 六
+I (240999) clock: current time: 2026-10-17 08:30:14 week 六
+I (241999) clock: current time: 2026-10-17 08:30:15 week 六
+I (242999) clock: current time: 2026-10-17 08:30:16 week 六
+I (243999) clock: current time: 2026-10-17 08:30:17 week 六
+I (244999) clock: current time: 2026-10-17 08:30:18 week 六
+I (245999) clock: current time: 2026-10-17 08:30:19 week 六
+I (246999) clock: current time: 2026-10-17 08:30:20 week 六
+I (247999) clock: current time: 2026-10-17 08:30:21 week 六
+I (248999) clock: current time: 2026-10-17 08:30:22 week 六
+I (249999) clock: current time: 2026-10-17 08:30:23 week 六
+I (250999) clock: current time: 2026-10-17 08:30:24 week 六
+I (251999) clock: current time: 2026-10-17 08:30:25 week 六
+I (252999) clock: current time: 2026-10-17 08:30:26 week 六
+I (253999) clock: current time: 2026-10-17 08:30:27 week 六
+I (254999) clock: current time: 2026-10-17 08:30:28 week 六
+I (255999) clock: current time: 2026-10-17 08:30:29 week 六
+I (256999) clock: current time: 2026-10-17 08:30:30 week 六
+I (257999) clock: current time: 2026-10-17 08:30:31 week 六
+I (258999) clock: current time: 2026-10-17 08:30:32 week 六
+I (259999) clock: current time: 2026-10-17 08:30:33 week 六
+I (260999) clock: current time: 2026-10-17 08:30:34 week 六
+I (261999) clock: current time: 2026-10-17 08:30:35 week 六
+I (262999) clock: current time: 2026-10-17 08:30:36 week 六
+I (263999) clock: current time: 2026-10-17 08:30:37 week 六
+I (264999) clock: current time: 2026-10-17 08:30:38 week 六
+I (265999) clock: current time: 2026-10-17 08:30:39 week 六
+I (266999) clock: current time: 2026-10-17 08:30:40 week 六
+I (267999) clock: current time: 2026-10-17 08:30:41 week 六
+I (268999) clock: current time: 2026-10-17 08:30:42 week 六
+I (269999) clock: current time: 2026-10-17 08:30:43 week 六
+I (270999) clock: current time: 2026-10-17 08:30:44 week 六
+I (271999) clock: current time: 2026-10-17 08:30:45 week 六
+I (272999) clock: current time: 2026-10-17 08:30:46 week 六
+I (273999) clock: current time: 2026-10-17 08:30:47 week 六
+I (274999) clock: current time: 2026-10-17 08:30:48 week 六
+I (275999) clock: current time: 2026-10-17 08:30:49 week 六
+I (276999) clock: current time: 2026-10-17 08:30:50 week 六
+I (277999) clock: current time: 2026-10-17 08:30:51 week 六
+I (278999) clock: current time: 2026-10-17 08:30:52 week 六
+I (279999) clock: current time: 2026-10-17 08:30:53 week 六
+I (280999) clock: current time: 2026-10-17 08:30:54 week 六
+I (281999) clock: current time: 2026-10-17 08:30:55 week 六
+I (282999) clock: current time: 2026-10-17 08:30:56 week 六
+I (283999) clock: current time: 2026-10-17 08:30:57 week 六
+I (284999) clock: current time: 2026-10-17 08:30:58 week 六
+I (285999) clock: current time: 2026-10-17 08:30:59 week 六
+I (286999) clock: current time: 2026-10-17 08:31:00 week 六
+I (287999) clock: current time: 2026-10-17 08:31:01 week 六
+I (288999) clock: current time: 2026-10-17 08:31:02 week 六
+I (289999) clock: current time: 2026-10-17 08:31:03 week 六
+I (290999) clock: current time: 2026-10-17 08:31:04 week 六
+I (291999) clock: current time: 2026-10-17 08:31:05 week 六
+I (292999) clock: current time: 2026-10-17 08:31:06 week 六
+I (293999) clock: current time: 2026-10-17 08:31:07 week 六
+I (294999) clock: current time: 2026-10-17 08:31:08 week 六
+I (295999) clock: current time: 2026-10-17 08:31:09 week 六
+I (296999) clock: current time: 2026-10-17 08:31:10 week 六
+I (297999) clock: current time: 2026-10-17 08:31:11 week 六
+I (298999) clock: current time: 2026-10-17 08:31:12 week 六
+I (299999) clock: current time: 2026-10-17 08:31:13 week 六
+I (300999) clock: current time: 2026-10-17 08:31:14 week 六
+I (301999) clock: current time: 2026-10-17 08:31:15 week 六
+I (302999) clock: current time: 2026-10-17 08:31:16 week 六
+I (303999) clock: current time: 2026-10-17 08:31:17 week 六
+I (304999) clock: current time: 2026-10-17 08:31:18 week 六
+I (305999) clock: current time: 2026-10-17 08:31:19 week 六
+I (306999) clock: current time: 2026-10-17 08:31:20 week 六
+I (307999) clock: current time: 2026-10-17 08:31:21 week 六
+I (308999) clock: current time: 2026-10-17 08:31:22 week 六
+I (309999) clock: current time: 2026-10-17 08:31:23 week 六
+I (310999) clock: current time: 2026-10-17 08:31:24 week 六
+I (311999) clock: current time: 2026-10-17 08:31:25 week 六
+I (312999) clock: current time: 2026-10-17 08:31:26 week 六
+I (313999) clock: current time: 2026-10-17 08:31:27 week 六
+I (314999) clock: current time: 2026-10-17 08:31:28 week 六
+I (315999) clock: current time: 2026-10-17 08:31:29 week 六
+I (316999) clock: current time: 2026-10-17 08:31:30 week 六
+I (317999) clock: current time: 2026-10-17 08:31:31 week 六
+I (318999) clock: current time: 2026-10-17 08:31:32 week 六
+I (319999) clock: current time: 2026-10-17 08:31:33 week 六
+I (320999) clock: current time: 2026-10-17 08:31:34 week 六
+I (321999) clock: current time: 2026-10-17 08:31:35 week 六
+I (322999) clock: current time: 2026-10-17 08:31:36 week 六
+I (323999) clock: current time: 2026-10-17 08:31:37 week 六
+I (324999) clock: current time: 2026-10-17 08:31:38 week 六
+I (325999) clock: current time: 2026-10-17 08:31:39 week 六
+I (326999) clock: current time: 2026-10-17 08:31:40 week 六
+I (327999) clock: current time: 2026-10-17 08:31:41 week 六
+I (328999) clock: current time: 2026-10-17 08:31:42 week 六
+I (329999) clock: current time: 2026-10-17 08:31:43 week 六
+I (330999) clock: current time: 2026-10-17 08:31:44 week 六
+I (331999) clock: current time: 2026-10-17 08:31:45 week 六
+I (332999) clock: current time: 2026-10-17 08:31:46 week 六
+I (333999) clock: current time: 2026-10-17 08:31:47 week 六
+I (334999) clock: current time: 2026-10-17 08:31:48 week 六
+I (335999) clock: current time: 2026-10-17 08:31:49 week 六
+I (336999) clock: current time: 2026-10-17 08:31:50 week 六
+I (337999) clock: current time: 2026-10-17 08:31:51 week 六
+I (338999) clock: current time: 2026-10-17 08:31:52 week 六
+I (339999) clock: current time: 2026-10-17 08:31:53 week 六
+I (340999) clock: current time: 2026-10-17 08:31:54 week 六
+I (341999) clock: current time: 2026-10-17 08:31:55 week 六
+I (342999) clock: current time: 2026-10-17 08:31:56 week 六
+I (343999) clock: current time: 2026-10-17 08:31:57 week 六
+I (344999) clock: current time: 2026-10-17 08:31:58 week 六
+I (345999) clock: current time: 2026-10-17 08:31:59 week 六
+I (346999) clock: current time: 2026-10-17 08:32:00 week 六
+I (347999) clock: current time: 2026-10-17 08:32:01 week 六
+I (348999) clock: current time: 2026-10-17 08:32:02 week 六
+I (349999) clock: current time: 2026-10-17 08:32:03 week 六
+I (350999) clock: current time: 2026-10-17 08:32:04 week 六
+I (351999) clock: current time: 2026-10-17 08:32:05 week 六
+I (352999) clock: current time: 2026-10-17 08:32:06 week 六
+I (353999) clock: current time: 2026-10-17 08:32:07 week 六
+I (354999) clock: current time: 2026-10-17 08:32:08 week 六
+I (355999) clock: current time: 2026-10-17 08:32:09 week 六
+I (356999) clock: current time: 2026-10-17 08:32:10 week 六
+I (357999) clock: current time: 2026-10-17 08:32:11 week 六
+I (358999) clock: current time: 2026-10-17 08:32:12 week 六
+I (359999) clock: current time: 2026-10-17 08:32:13 week 六
+I (360999) clock: current time: 2026-10-17 08:32:14 week 六
+I (361999) clock: current time: 2026-10-17 08:32:15 week 六
+I (362999) clock: current time: 2026-10-17 08:32:16 week 六
+I (363999) clock: current time: 2026-10-17 08:32:17 week 六
+I (364999) clock: current time: 2026-10-17 08:32:18 week 六
+I (365999) clock: current time: 2026-10-17 08:32:19 week 六
+I (366999) clock: current time: 2026-10-17 08:32:20 week 六
+I (367999) clock: current time: 2026-10-17 08:32:21 week 六
+I (368999) clock: current time: 2026-10-17 08:32:22 week 六
+I (369999) clock: current time: 2026-10-17 08:32:23 week 六
+I (370999) clock: current time: 2026-10-17 08:32:24 week 六
+I (371999) clock: current time: 2026-10-17 08:32:25 week 六
+I (372999) clock: current time: 2026-10-17 08:32:26 week 六
+I (373999) clock: current time: 2026-10-17 08:32:27 week 六
+I (374999) clock: current time: 2026-10-17 08:32:28 week 六
+I (375999) clock: current time: 2026-10-17 08:32:29 week 六
+I (376999) clock: current time: 2026-10-17 08:32:30 week 六
+I (377999) clock: current time: 2026-10-17 08:32:31 week 六
+I (378999) clock: current time: 2026-10-17 08:32:32 week 六
+I (379999) clock: current time: 2026-10-17 08:32:33 week 六
+I (380999) clock: current time: 2026-10-17 08:32:34 week 六
+I (381999) clock: current time: 2026-10-17 08:32:35 week 六
+I (382999) clock: current time: 2026-10-17 08:32:36 week 六
+I (383999) clock: current time: 2026-10-17 08:32:37 week 六
+I (384999) clock: current time: 2026-10-17 08:32:38 week 六
+I (385999) clock: current time: 2026-10-17 08:32:39 week 六
+I (386999) clock: current time: 2026-10-17 08:32:40 week 六
+I (387999) clock: current time: 2026-10-17 08:32:41 week 六
+I (388999) clock: current time: 2026-10-17 08:32:42 week 六
+I (389999) clock: current time: 2026-10-17 08:32:43 week 六
+I (390999) clock: current time: 2026-10-17 08:32:44 week 六
+I (391999) clock: current time: 2026-10-17 08:32:45 week 六
+I (392999) clock: current time: 2026-10-17 08:32:46 week 六
+I (393999) clock: current time: 2026-10-17 08:32:47 week 六
+I (394999) clock: current time: 2026-10-17 08:32:48 week 六
+I (395999) clock: current time: 2026-10-17 08:32:49 week 六
+I (396999) clock: current time: 2026-10-17 08:32:50 week 六
+I (397999) clock: current time: 2026-10-17 08:32:51 week 六
+I (398999) clock: current time: 2026-10-17 08:32:52 week 六
+I (399999) clock: current time: 2026-10-17 08:32:53 week 六
+I (400999) clock: current time: 2026-10-17 08:32:54 week 六
+I (401999) clock: current time: 2026-10-17 08:32:55 week 六
+I (402999) clock: current time: 2026-10-17 08:32:56 week 六
+I (403999) clock: current time: 2026-10-17 08:32:57 week 六
+I (404999) clock: current time: 2026-10-17 08:32:58 week 六
+I (405999) clock: current time: 2026-10-17 08:32:59 week 六
+I (406999) clock: current time: 2026-10-17 08:33:00 week 六
+I (407999) clock: current time: 2026-10-17 08:33:01 week 六
+I (408999) clock: current time: 2026-10-17 08:33:02 week 六
+I (409999) clock: current time: 2026-10-17 08:33:03 week 六
+I (410999) clock: current time: 2026-10-17 08:33:04 week 六
+I (411999) clock: current time: 2026-10-17 08:33:05 week 六
+I (412999) clock: current time: 2026-10-17 08:33:06 week 六
+I (413999) clock: current time: 2026-10-17 08:33:07 week 六
+I (414999) clock: current time: 2026-10-17 08:33:08 week 六
+I (415999) clock: current time: 2026-10-17 08:33:09 week 六
+I (416999) clock: current time: 2026-10-17 08:33:10 week 六
+I (417999) clock: current time: 2026-10-17 08:33:11 week 六
+I (418999) clock: current time: 2026-10-17 08:33:12 week 六
+I (419999) clock: current time: 2026-10-17 08:33:13 week 六
+I (420999) clock: current time: 2026-10-17 08:33:14 week 六
+I (421999) clock: current time: 2026-10-17 08:33:15 week 六
+I (422999) clock: current time: 2026-10-17 08:33:16 week 六
+I (423999) clock: current time: 2026-10-17 08:33:17 week 六
+I (424999) clock: current time: 2026-10-17 08:33:18 week 六
+I (425999) clock: current time: 2026-10-17 08:33:19 week 六
+I (426999) clock: current time: 2026-10-17 08:33:20 week 六
+I (427999) clock: current time: 2026-10-17 08:33:21 week 六
+I (428999) clock: current time: 2026-10-17 08:33:22 week 六
+I (429999) clock: current time: 2026-10-17 08:33:23 week 六
+I (430999) clock: current time: 2026-10-17 08:33:24 week 六
+I (431999) clock: current time: 2026-10-17 08:33:25 week 六
+I (432999) clock: current time: 2026-10-17 08:33:26 week 六
+I (433999) clock: current time: 2026-10-17 08:33:27 week 六
+I (434999) clock: current time: 2026-10-17 08:33:28 week 六
+I (435999) clock: current time: 2026-10-17 08:33:29 week 六
+I (436999) clock: current time: 2026-10-17 08:33:30 week 六
+I (437999) clock: current time: 2026-10-17 08:33:31 week 六
+I (438999) clock: current time: 2026-10-17 08:33:32 week 六
+I (439999) clock: current time: 2026-10-17 08:33:33 week 六
+I (440999) clock: current time: 2026-10-17 08:33:34 week 六
+I (441999) clock: current time: 2026-10-17 08:33:35 week 六
+I (442999) clock: current time: 2026-10-17 08:33:36 week 六
+I (443999) clock: current time: 2026-10-17 08:33:37 week 六
+I (444999) clock: current time: 2026-10-17 08:33:38 week 六
+I (445999) clock: current time: 2026-10-17 08:33:39 week 六
+I (446999) clock: current time: 2026-10-17 08:33:40 week 六
+I (447999) clock: current time: 2026-10-17 08:33:41 week 六
+I (448999) clock: current time: 2026-10-17 08:33:42 week 六
+I (449999) clock: current time: 2026-10-17 08:33:43 week 六
+I (450999) clock: current time: 2026-10-17 08:33:44 week 六
+I (451999) clock: current time: 2026-10-17 08:33:45 week 六
+I (452999) clock: current time: 2026-10-17 08:33:46 week 六
+I (453999) clock: current time: 2026-10-17 08:33:47 week 六
+I (454999) clock: current time: 2026-10-17 08:33:48 week 六
+I (455999) clock: current time: 2026-10-17 08:33:49 week 六
+I (456999) clock: current time: 2026-10-17 08:33:50 week 六
+I (457999) clock: current time: 2026-10-17 08:33:51 week 六
+I (458999) clock: current time: 2026-10-17 08:33:52 week 六
+I (459999) clock: current time: 2026-10-17 08:33:53 week 六
+I (460999) clock: current time: 2026-10-17 08:33:54 week 六
+I (461999) clock: current time: 2026-10-17 08:33:55 week 六
+I (462999) clock: current time: 2026-10-17 08:33:56 week 六
+I (463999) clock: current time: 2026-10-17 08:33:57 week 六
+I (464999) clock: current time: 2026-10-17 08:33:58 week 六
+I (465999) clock: current time: 2026-10-17 08:33:59 week 六
+I (466999) clock: current time: 2026-10-17 08:34:00 week 六
+I (467999) clock: current time: 2026-10-17 08:34:01 week 六
+I (468999) clock: current time: 2026-10-17 08:34:02 week 六
+I (469999) clock: current time: 2026-10-17 08:34:03 week 六
+I (470999) clock: current time: 2026-10-17 08:34:04 week 六
+I (471999) clock: current time: 2026-10-17 08:34:05 week 六
+I (472999) clock: current time: 2026-10-17 08:34:06 week 六
+I (473999) clock: current time: 2026-10-17 08:34:07 week 六
+I (474999) clock: current time: 2026-10-17 08:34:08 week 六
+I (475999) clock: current time: 2026-10-17 08:34:09 week 六
+I (476999) clock: current time: 2026-10-17 08:34:10 week 六
+I (477999) clock: current time: 2026-10-17 08:34:11 week 六
+I (478999) clock: current time: 2026-10-17 08:34:12 week 六
+I (479999) clock: current time: 2026-10-17 08:34:13 week 六
+I (480999) clock: current time: 2026-10-17 08:34:14 week 六
+I (481999) clock: current time: 2026-10-17 08:34:15 week 六
+I (482999) clock: current time: 2026-10-17 08:34:16 week 六
+I (483999) clock: current time: 2026-10-17 08:34:17 week 六
+I (484999) clock: current time: 2026-10-17 08:34:18 week 六
+I (485999) clock: current time: 2026-10-17 08:34:19 week 六
+I (486999) clock: current time: 2026-10-17 08:34:20 week 六
+I (487999) clock: current time: 2026-10-17 08:34:21 week 六
+I (488999) clock: current time: 2026-10-17 08:34:22 week 六
+I (489999) clock: current time: 2026-10-17 08:34:23 week 六
+I (490999) clock: current time: 2026-10-17 08:34:24 week 六
+I (491999) clock: current time: 2026-10-17 08:34:25 week 六
+I (492999) clock: current time: 2026-10-17 08:34:26 week 六
+I (493999) clock: current time: 2026-10-17 08:34:27 week 六
+I (494999) clock: current time: 2026-10-17 08:34:28 week 六
+I (495999) clock: current time: 2026-10-17 08:34:29 week 六
+I (496999) clock: current time: 2026-10-17 08:34:30 week 六
+I (497999) clock: current time: 2026-10-17 08:34:31 week 六
+I (498999) clock: current time: 2026-10-17 08:34:32 week 六
+I (499999) clock: current time: 2026-10-17 08:34:33 week 六
+I (500999) clock: current time: 2026-10-17 08:34:34 week 六
+I (501999) clock: current time: 2026-10-17 08:34:35 week 六
+I (502999) clock: current time: 2026-10-17 08:34:36 week 六
+I (503999) clock: current time: 2026-10-17 08:34:37 week 六
+I (504999) clock: current time: 2026-10-17 08:34:38 week 六
+I (505999) clock: current time: 2026-10-17 08:34:39 week 六
+I (506919) clock: current time: 2026-10-17 08:34:40 week 六
+I (507159) clock: current time: 2026-10-17 08:34:41 week 六
+I (507459) clock: current time: 2026-10-17 08:34:41 week 六
+I (508229) clock: current time: 2026-10-17 08:34:42 week 六
+I (508379) clock: current time: 2026-10-17 08:34:42 week 六
+I (508469) clock: current time: 2026-10-17 08:34:42 week 六
+I (508469) clock: current time: 2026-10-17 08:34:42 week 六
+I (508629) clock: current time: 2026-10-17 08:34:42 week 六
+I (508929) clock: EPD_Init
+I (510039) BAT_Power: BAT_Power = 100%
+I (510759) BAT_Power: BAT_Power = 100%
+I (516739) timezone: Read the time zone index from NVS: 20 (UTC+8)
+I (516739) timezone: Applied time zones: UTC+8 (CST-8)
+I (516759) clock: The RTC reading result: 2026-10-17 08:34:50
+I (516759) clock: EPD_Init
+I (517169) clock: current time: 2026-10-17 08:34:50 week:星期六
+I (517359) TemperatureHumidity: Temperature = 24.79 C, Humidity = 41.84%
+W (517369) EPD_PAINT: The character pattern cannot be read: ℃
+I (517379) BAT_Power: BAT_Power = 100%
+I (519539) clock: EPD_Sleep
+I (519559) clock: current time: 2026-10-17 08:34:50 week 六
+I (520269) clock: The RTC reading result: 2026-10-17 08:34:54
+I (520269) clock: current time: 2026-10-17 08:34:54 week 六
+I (520429) clock: The RTC reading result: 2026-10-17 08:34:54
+I (520429) clock: current time: 2026-10-17 08:34:54 week 六
+I (520549) clock: The RTC reading result: 2026-10-17 08:34:54
+I (520549) clock: current time: 2026-10-17 08:34:54 week 六
+I (520559) clock: The RTC reading result: 2026-10-17 08:34:54
+I (520559) clock: current time: 2026-10-17 08:34:54 week 六
+I (520699) clock: The RTC reading result: 2026-10-17 08:34:54
+I (520699) clock: current time: 2026-10-17 08:34:54 week 六
+I (522109) BAT_Power: BAT_Power = 100%
+I (526159) BAT_Power: BAT_Power = 100%
+I (533609) BAT_Power: BAT_Power = 100%
+I (586339) BAT_Power: BAT_Power = 100%
+I (595979) home: EPD_Sleep

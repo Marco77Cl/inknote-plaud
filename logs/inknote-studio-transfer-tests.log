@@ -1,0 +1,20 @@
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51199)
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Users/marco/Documents/ChatGPT/水墨屏plaud项目/tests/check_studio_download.py", line 16, in do_GET
+    self.wfile.write(data[:65536] if self.path=='/broken' else data);self.wfile.flush();time.sleep(0.3);self.close_connection=True
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+{"interrupted_resume": "PASS", "sha256": "PASS", "401_preserves_partial": "PASS", "invalid_range_rejected": "PASS", "corrupt_quarantined": "PASS"}

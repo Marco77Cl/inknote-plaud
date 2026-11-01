@@ -1,0 +1,57 @@
+Executing action: all (aliases: build)
+Running ninja in directory /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build
+Executing "ninja all"...
+[1/11] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/esp-idf/main && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/spiffs/spiffsgen.py 0xf0000 /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_weather /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[2/11] Performing build step for 'bootloader'
+[1/1] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/bootloader/esp-idf/esptool_py && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/bootloader/bootloader.bin
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[3/11] No install step for 'bootloader'
+[4/11] Completed 'bootloader'
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/inknote/ui_render.c.obj
+[6/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cc.obj
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc: In function 'void user_Task(void*)':
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:300:28: warning: missing initializer for member 'Time_data::months' [-Wmissing-field-initializers]
+  300 |     Time_data rtc_time = {0};
+      |                            ^
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:300:28: warning: missing initializer for member 'Time_data::days' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:300:28: warning: missing initializer for member 'Time_data::hours' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:300:28: warning: missing initializer for member 'Time_data::minutes' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:300:28: warning: missing initializer for member 'Time_data::seconds' [-Wmissing-field-initializers]
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:300:28: warning: missing initializer for member 'Time_data::week' [-Wmissing-field-initializers]
+In file included from /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:36:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h: At global scope:
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:112:13: warning: 'bool read_id3v1_tag(FILE*, char*, char*, size_t)' declared 'static' but never defined [-Wunused-function]
+  112 | static bool read_id3v1_tag(FILE *fp, char *title, char *artist, size_t max_len);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:113:13: warning: 'bool parse_mp3_frame_header(uint32_t, int*, int*, int*)' declared 'static' but never defined [-Wunused-function]
+  113 | static bool parse_mp3_frame_header(uint32_t header, int *bitrate, int *samplerate, int *channels);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:114:13: warning: 'long int find_mp3_frame(FILE*)' declared 'static' but never defined [-Wunused-function]
+  114 | static long find_mp3_frame(FILE *fp);
+      |             ^~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/page_audio/page_audio.h:115:17: warning: 'uint32_t parse_synchsafe_int(uint8_t*)' declared 'static' but never defined [-Wunused-function]
+  115 | static uint32_t parse_synchsafe_int(uint8_t *data);
+      |                 ^~~~~~~~~~~~~~~~~~~
+/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/main/main.cc:273:13: warning: 'void display_home_time_img_last(Time_data)' defined but not used [-Wunused-function]
+  273 | static void display_home_time_img_last(Time_data rtc_time)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[7/11] Linking C static library esp-idf/main/libmain.a
+[8/11] Generating esp-idf/esp_system/ld/sections.ld
+[9/11] Linking CXX executable inknote_system.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/inknote_system.bin
+[11/11] cd /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/esp-idf/esptool_py && /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/espressif/python_env/idf5.5_py3.9_env/bin/python /Users/marco/Documents/ChatGPT/水墨屏plaud项目/tools/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/partition_table/partition-table.bin /Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build/inknote_system.bin
+inknote_system.bin binary size 0xd37590 bytes. Smallest app partition is 0xf00000 bytes. 0x1c8a70 bytes (12%) free.
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 16MB --flash_freq 80m 0x0 apps/inknote-system/build/bootloader/bootloader.bin 0x8000 apps/inknote-system/build/partition_table/partition-table.bin 0x10000 apps/inknote-system/build/inknote_system.bin 0xf10000 apps/inknote-system/build/storage.bin
+or from the "/Users/marco/Documents/ChatGPT/水墨屏plaud项目/apps/inknote-system/build" directory
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"
